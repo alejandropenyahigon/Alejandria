@@ -101,7 +101,7 @@ namespace Devon4Net.WebAPI.Implementation.Business.BookManagement.Service
             }
 
             var newBookDto = await _httpClientHandler.Send<BookDto>(HttpMethod.Post, "Books", "/v1/bookmanagement/createbook", bookDto, MediaType.ApplicationJson).ConfigureAwait(false);
-            var newBook = await _bookRepository.GetFirstOrDefault(x => x.Title == bookDto.Title && x.Summary == bookDto.Summary && x.Genere == bookDto.Genere).ConfigureAwait(false);
+            var newBook = await _bookRepository.GetFirstOrDefault(x => x.Title == newBookDto.Title && x.Summary == newBookDto.Summary && x.Genere == newBookDto.Genere).ConfigureAwait(false);
             var authorBook = await _authorBookRepository.Create(authorId, newBook.Id, DateTime.Now, _alejandriaOptions.Validity).ConfigureAwait(false);
 
             return BookConverter.ModelToDto(newBook);
