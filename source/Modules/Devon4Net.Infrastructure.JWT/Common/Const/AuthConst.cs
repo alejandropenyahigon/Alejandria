@@ -6,6 +6,7 @@
         /// Default value for AuthenticationScheme property in the JwtBearerAuthenticationOptions
         /// </summary>
         public const string AuthenticationScheme = "Bearer";
+        public const string AlejandriaAuthor = "AlejandriaAuthor";
         public const string DevonSampleUserRole = "DevonSampleUserRole";
         public const string DevonSamplePolicy = "DevonSamplePolicy";
     }

@@ -8,6 +8,7 @@ using Devon4Net.Infrastructure.Log;
 using Devon4Net.WebAPI.Implementation.Business.AuthManagement.Dto;
 using Devon4Net.WebAPI.Implementation.Business.UserManagement.Dto;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 

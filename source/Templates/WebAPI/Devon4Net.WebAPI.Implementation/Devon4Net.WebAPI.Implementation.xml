@@ -327,7 +327,7 @@
             Author controller
             </summary>
         </member>
-        <member name="M:Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Controllers.AuthorController.#ctor(Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Service.IAuthorService)">
+        <member name="M:Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Controllers.AuthorController.#ctor(Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Service.IAuthorService,Devon4Net.Infrastructure.JWT.Handlers.IJwtHandler)">
             <summary>
             Constructor
             </summary>
@@ -1170,7 +1170,7 @@
             </summary>
             <param name="context"></param>
         </member>
-        <member name="M:Devon4Net.WebAPI.Implementation.Data.Repositories.AuthorBookRepository.Create(System.Guid,System.Guid,System.DateTime,System.Int32)">
+        <member name="M:Devon4Net.WebAPI.Implementation.Data.Repositories.AuthorBookRepository.Create(System.Guid,System.Guid,System.DateTime,System.DateTime)">
             <summary>
             Creates an AuthorBook entity
             </summary>
@@ -1432,7 +1432,7 @@
             AuthorBookRepository interface
             </summary>
         </member>
-        <member name="M:Devon4Net.WebAPI.Implementation.Domain.RepositoryInterfaces.IAuthorBookRepository.Create(System.Guid,System.Guid,System.DateTime,System.Int32)">
+        <member name="M:Devon4Net.WebAPI.Implementation.Domain.RepositoryInterfaces.IAuthorBookRepository.Create(System.Guid,System.Guid,System.DateTime,System.DateTime)">
             <summary>
             Creates an AuthorBook entity
             </summary>

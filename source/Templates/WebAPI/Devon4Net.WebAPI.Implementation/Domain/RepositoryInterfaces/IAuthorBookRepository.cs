@@ -16,6 +16,6 @@ namespace Devon4Net.WebAPI.Implementation.Domain.RepositoryInterfaces
         /// <param name="authorId"></param>
         /// <param name="bookId"></param>
         /// <returns></returns>
-        Task<AuthorBook> Create(Guid authorId, Guid bookId, DateTime now, int validity);
+        Task<AuthorBook> Create(Guid authorId, Guid bookId, DateTime now, DateTime validityDate);
     }
 }

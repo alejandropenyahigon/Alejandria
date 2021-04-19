@@ -27,10 +27,10 @@ namespace Devon4Net.WebAPI.Implementation.Data.Repositories
         /// <param name="authorId"></param>
         /// <param name="bookId"></param>
         /// <returns></returns>
-        public async Task<AuthorBook> Create(Guid authorId, Guid bookId, DateTime now, int validity)
+        public async Task<AuthorBook> Create(Guid authorId, Guid bookId, DateTime now, DateTime validityDate)
         {
             Devon4NetLogger.Debug($"Create AuthorBook method from repository AuthorBookRepository with value : AuthorId = {authorId} y BookId= {bookId}");
-            return await Create(new AuthorBook { AuthorId = authorId, BookId = bookId, PublishDate = now, ValidityDate = now.AddYears(validity) }).ConfigureAwait(false);
+            return await Create(new AuthorBook { AuthorId = authorId, BookId = bookId, PublishDate = now, ValidityDate = validityDate }).ConfigureAwait(false);
         }
     }
 }
