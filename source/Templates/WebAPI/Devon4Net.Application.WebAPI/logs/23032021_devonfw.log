@@ -1,0 +1,1196 @@
+2021-03-23 12:20:28.914 +01:00 [INF] Please setup your database in order to have the RabbitMq messaging backup feature
+2021-03-23 12:20:30.217 +01:00 [INF] Please setup your database in order to have the RabbitMq messaging backup feature
+2021-03-23 12:20:35.059 +01:00 [DBG] Hosting starting
+2021-03-23 12:20:35.169 +01:00 [INF] User profile is available. Using 'C:\Users\apenahig\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-03-23 12:20:35.434 +01:00 [DBG] Repository contains no viable default key. Caller should generate a key with immediate activation.
+2021-03-23 12:20:35.436 +01:00 [DBG] Policy resolution states that a new key should be added to the key ring.
+2021-03-23 12:20:35.442 +01:00 [INF] Creating key {9d073722-32c1-4422-88d8-684df3278e92} with creation date 2021-03-23 11:20:35Z, activation date 2021-03-23 11:20:35Z, and expiration date 2021-06-21 11:20:35Z.
+2021-03-23 12:20:35.463 +01:00 [DBG] Descriptor deserializer type for key {9d073722-32c1-4422-88d8-684df3278e92} is 'Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.13.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+2021-03-23 12:20:35.511 +01:00 [DBG] No key escrow sink found. Not writing key {9d073722-32c1-4422-88d8-684df3278e92} to escrow.
+2021-03-23 12:20:35.562 +01:00 [DBG] Encrypting to Windows DPAPI for current user account (CORP\apenahig).
+2021-03-23 12:20:35.579 +01:00 [INF] Writing data to file 'C:\Users\apenahig\AppData\Local\ASP.NET\DataProtection-Keys\key-9d073722-32c1-4422-88d8-684df3278e92.xml'.
+2021-03-23 12:20:35.585 +01:00 [DBG] Key cache expiration token triggered by 'CreateNewKey' operation.
+2021-03-23 12:20:35.590 +01:00 [DBG] Reading data from file 'C:\Users\apenahig\AppData\Local\ASP.NET\DataProtection-Keys\key-9d073722-32c1-4422-88d8-684df3278e92.xml'.
+2021-03-23 12:20:35.617 +01:00 [DBG] Found key {9d073722-32c1-4422-88d8-684df3278e92}.
+2021-03-23 12:20:35.626 +01:00 [DBG] Considering key {9d073722-32c1-4422-88d8-684df3278e92} with expiration date 2021-06-21 11:20:35Z as default key.
+2021-03-23 12:20:35.641 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.13.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2021-03-23 12:20:35.647 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2021-03-23 12:20:35.662 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.13.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2021-03-23 12:20:35.677 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2021-03-23 12:20:35.687 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2021-03-23 12:20:35.696 +01:00 [DBG] Using key {9d073722-32c1-4422-88d8-684df3278e92} as the default key.
+2021-03-23 12:20:35.698 +01:00 [DBG] Key ring with default key {9d073722-32c1-4422-88d8-684df3278e92} was loaded during application startup.
+2021-03-23 12:20:35.931 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+2021-03-23 12:20:35.982 +01:00 [DBG] Initializing Razor view compiler with no compiled views.
+2021-03-23 12:20:36.041 +01:00 [DBG] Failed to locate the development https certificate at 'null'.
+2021-03-23 12:20:36.047 +01:00 [WRN] Overriding address(es) 'https://localhost:8085'. Binding to endpoints defined in UseKestrel() instead.
+2021-03-23 12:20:36.081 +01:00 [INF] Now listening on: https://0.0.0.0:8085
+2021-03-23 12:20:36.084 +01:00 [DBG] Loaded hosting startup assembly Devon4Net.Application.WebAPI
+2021-03-23 12:20:36.090 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-23 12:20:36.093 +01:00 [INF] Hosting environment: Development
+2021-03-23 12:20:36.094 +01:00 [INF] Content root path: C:\Users\apenahig\Source\Repos\devon4net\source\Templates\WebAPI\Devon4Net.Application.WebAPI
+2021-03-23 12:20:36.095 +01:00 [DBG] Hosting started
+2021-03-23 12:20:36.179 +01:00 [DBG] Connection id "0HM7DTMN68MGQ" received FIN.
+2021-03-23 12:20:36.213 +01:00 [DBG] Connection id "0HM7DTMN68MGQ" accepted.
+2021-03-23 12:20:36.215 +01:00 [DBG] Connection id "0HM7DTMN68MGQ" started.
+2021-03-23 12:20:36.246 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Authentication failed because the remote party has closed the transport stream.
+   at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartReceiveBlob(Byte[] buffer, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ForceAuthentication(Boolean receiveFirst, Byte[] buffer, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ProcessAuthentication(LazyAsyncResult lazyResult, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.BeginAuthenticateAsServer(SslServerAuthenticationOptions sslServerAuthenticationOptions, CancellationToken cancellationToken, AsyncCallback asyncCallback, Object asyncState)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_0(SslServerAuthenticationOptions arg1, CancellationToken arg2, AsyncCallback callback, Object state)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl[TArg1,TArg2](Func`5 beginMethod, Func`2 endFunction, Action`1 endAction, TArg1 arg1, TArg2 arg2, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync[TArg1,TArg2](Func`5 beginMethod, Action`1 endMethod, TArg1 arg1, TArg2 arg2, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync[TArg1,TArg2](Func`5 beginMethod, Action`1 endMethod, TArg1 arg1, TArg2 arg2, Object state)
+   at System.Net.Security.SslStream.AuthenticateAsServerAsync(SslServerAuthenticationOptions sslServerAuthenticationOptions, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+2021-03-23 12:20:36.361 +01:00 [DBG] Connection id "0HM7DTMN68MGQ" stopped.
+2021-03-23 12:20:36.373 +01:00 [DBG] Connection id "0HM7DTMN68MGQ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2021-03-23 12:20:37.893 +01:00 [DBG] Connection id "0HM7DTMN68MGR" accepted.
+2021-03-23 12:20:37.914 +01:00 [DBG] Connection id "0HM7DTMN68MGR" started.
+2021-03-23 12:20:37.921 +01:00 [DBG] Connection id "0HM7DTMN68MGS" accepted.
+2021-03-23 12:20:37.950 +01:00 [DBG] Connection id "0HM7DTMN68MGS" started.
+2021-03-23 12:20:38.130 +01:00 [DBG] Connection id "0HM7DTMN68MGT" accepted.
+2021-03-23 12:20:38.139 +01:00 [DBG] Connection id "0HM7DTMN68MGT" started.
+2021-03-23 12:20:38.262 +01:00 [DBG] Connection id "0HM7DTMN68MGT" received FIN.
+2021-03-23 12:20:38.263 +01:00 [DBG] Connection id "0HM7DTMN68MGR" received FIN.
+2021-03-23 12:20:38.263 +01:00 [DBG] Connection id "0HM7DTMN68MGS" received FIN.
+2021-03-23 12:20:38.367 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.StartSendAuthResetSignal(ProtocolToken message, AsyncProtocolRequest asyncRequest, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.CheckCompletionBeforeNextReceive(ProtocolToken message, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartSendBlob(Byte[] incoming, Int32 count, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ProcessReceivedBlob(Byte[] buffer, Int32 count, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.PartialFrameCallback(AsyncProtocolRequest asyncRequest)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Security.SslStream.ThrowIfExceptional()
+   at System.Net.Security.SslStream.InternalEndProcessAuthentication(LazyAsyncResult lazyResult)
+   at System.Net.Security.SslStream.EndProcessAuthentication(IAsyncResult result)
+   at System.Net.Security.SslStream.EndAuthenticateAsServer(IAsyncResult asyncResult)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_1(IAsyncResult iar)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+2021-03-23 12:20:38.368 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.StartSendAuthResetSignal(ProtocolToken message, AsyncProtocolRequest asyncRequest, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.CheckCompletionBeforeNextReceive(ProtocolToken message, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartSendBlob(Byte[] incoming, Int32 count, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ProcessReceivedBlob(Byte[] buffer, Int32 count, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.PartialFrameCallback(AsyncProtocolRequest asyncRequest)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Security.SslStream.ThrowIfExceptional()
+   at System.Net.Security.SslStream.InternalEndProcessAuthentication(LazyAsyncResult lazyResult)
+   at System.Net.Security.SslStream.EndProcessAuthentication(IAsyncResult result)
+   at System.Net.Security.SslStream.EndAuthenticateAsServer(IAsyncResult asyncResult)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_1(IAsyncResult iar)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+2021-03-23 12:20:38.370 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.StartSendAuthResetSignal(ProtocolToken message, AsyncProtocolRequest asyncRequest, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.CheckCompletionBeforeNextReceive(ProtocolToken message, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartSendBlob(Byte[] incoming, Int32 count, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ProcessReceivedBlob(Byte[] buffer, Int32 count, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.PartialFrameCallback(AsyncProtocolRequest asyncRequest)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Security.SslStream.ThrowIfExceptional()
+   at System.Net.Security.SslStream.InternalEndProcessAuthentication(LazyAsyncResult lazyResult)
+   at System.Net.Security.SslStream.EndProcessAuthentication(IAsyncResult result)
+   at System.Net.Security.SslStream.EndAuthenticateAsServer(IAsyncResult asyncResult)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_1(IAsyncResult iar)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+2021-03-23 12:20:38.804 +01:00 [DBG] Connection id "0HM7DTMN68MGS" stopped.
+2021-03-23 12:20:38.999 +01:00 [DBG] Connection id "0HM7DTMN68MGT" stopped.
+2021-03-23 12:20:39.119 +01:00 [DBG] Connection id "0HM7DTMN68MGR" stopped.
+2021-03-23 12:20:39.119 +01:00 [DBG] Connection id "0HM7DTMN68MGS" sending FIN because: "The Socket transport's send loop completed gracefully."
+2021-03-23 12:20:39.126 +01:00 [DBG] Connection id "0HM7DTMN68MGT" sending FIN because: "The Socket transport's send loop completed gracefully."
+2021-03-23 12:20:39.130 +01:00 [DBG] Connection id "0HM7DTMN68MGR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2021-03-23 12:20:47.923 +01:00 [DBG] Connection id "0HM7DTMN68MGU" accepted.
+2021-03-23 12:20:47.926 +01:00 [DBG] Connection id "0HM7DTMN68MGU" started.
+2021-03-23 12:20:47.927 +01:00 [DBG] Connection id "0HM7DTMN68MGV" accepted.
+2021-03-23 12:20:47.928 +01:00 [DBG] Connection id "0HM7DTMN68MGV" started.
+2021-03-23 12:20:47.931 +01:00 [DBG] Connection id "0HM7DTMN68MGU" received FIN.
+2021-03-23 12:20:47.932 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.StartSendAuthResetSignal(ProtocolToken message, AsyncProtocolRequest asyncRequest, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.CheckCompletionBeforeNextReceive(ProtocolToken message, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartSendBlob(Byte[] incoming, Int32 count, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ProcessReceivedBlob(Byte[] buffer, Int32 count, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.PartialFrameCallback(AsyncProtocolRequest asyncRequest)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Security.SslStream.ThrowIfExceptional()
+   at System.Net.Security.SslStream.InternalEndProcessAuthentication(LazyAsyncResult lazyResult)
+   at System.Net.Security.SslStream.EndProcessAuthentication(IAsyncResult result)
+   at System.Net.Security.SslStream.EndAuthenticateAsServer(IAsyncResult asyncResult)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_1(IAsyncResult iar)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+2021-03-23 12:20:47.934 +01:00 [DBG] Connection id "0HM7DTMN68MGV" received FIN.
+2021-03-23 12:20:47.935 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.StartSendAuthResetSignal(ProtocolToken message, AsyncProtocolRequest asyncRequest, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.CheckCompletionBeforeNextReceive(ProtocolToken message, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartSendBlob(Byte[] incoming, Int32 count, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ProcessReceivedBlob(Byte[] buffer, Int32 count, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.PartialFrameCallback(AsyncProtocolRequest asyncRequest)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Security.SslStream.ThrowIfExceptional()
+   at System.Net.Security.SslStream.InternalEndProcessAuthentication(LazyAsyncResult lazyResult)
+   at System.Net.Security.SslStream.EndProcessAuthentication(IAsyncResult result)
+   at System.Net.Security.SslStream.EndAuthenticateAsServer(IAsyncResult asyncResult)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_1(IAsyncResult iar)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+2021-03-23 12:20:47.955 +01:00 [DBG] Connection id "0HM7DTMN68MGU" stopped.
+2021-03-23 12:20:47.978 +01:00 [DBG] Connection id "0HM7DTMN68MGV" stopped.
+2021-03-23 12:20:47.979 +01:00 [DBG] Connection id "0HM7DTMN68MGU" sending FIN because: "The Socket transport's send loop completed gracefully."
+2021-03-23 12:20:47.981 +01:00 [DBG] Connection id "0HM7DTMN68MGV" sending FIN because: "The Socket transport's send loop completed gracefully."
+2021-03-23 12:20:48.173 +01:00 [DBG] Connection id "0HM7DTMN68MH0" accepted.
+2021-03-23 12:20:48.178 +01:00 [DBG] Connection id "0HM7DTMN68MH0" started.
+2021-03-23 12:20:48.195 +01:00 [DBG] Connection id "0HM7DTMN68MH0" received FIN.
+2021-03-23 12:20:48.200 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.StartSendAuthResetSignal(ProtocolToken message, AsyncProtocolRequest asyncRequest, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.CheckCompletionBeforeNextReceive(ProtocolToken message, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartSendBlob(Byte[] incoming, Int32 count, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ProcessReceivedBlob(Byte[] buffer, Int32 count, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.PartialFrameCallback(AsyncProtocolRequest asyncRequest)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Security.SslStream.ThrowIfExceptional()
+   at System.Net.Security.SslStream.InternalEndProcessAuthentication(LazyAsyncResult lazyResult)
+   at System.Net.Security.SslStream.EndProcessAuthentication(IAsyncResult result)
+   at System.Net.Security.SslStream.EndAuthenticateAsServer(IAsyncResult asyncResult)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_1(IAsyncResult iar)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+2021-03-23 12:20:48.227 +01:00 [DBG] Connection id "0HM7DTMN68MH0" stopped.
+2021-03-23 12:20:48.228 +01:00 [DBG] Connection id "0HM7DTMN68MH0" sending FIN because: "The Socket transport's send loop completed gracefully."
+2021-03-23 12:20:48.250 +01:00 [DBG] Connection id "0HM7DTMN68MH1" accepted.
+2021-03-23 12:20:48.254 +01:00 [DBG] Connection id "0HM7DTMN68MH1" started.
+2021-03-23 12:20:48.327 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/index.html  
+2021-03-23 12:20:48.332 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2021-03-23 12:20:48.334 +01:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-03-23 12:20:48.349 +01:00 [DBG] The request path /swagger/index.html does not match an existing file
+2021-03-23 12:20:48.361 +01:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-03-23 12:20:48.474 +01:00 [INF] Request finished in 149.0377ms 200 text/html;charset=utf-8
+2021-03-23 12:20:48.510 +01:00 [DBG] Connection id "0HM7DTMN68MH2" accepted.
+2021-03-23 12:20:48.515 +01:00 [DBG] Connection id "0HM7DTMN68MH2" started.
+2021-03-23 12:20:48.527 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/swagger-ui-bundle.js  
+2021-03-23 12:20:48.527 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/swagger-ui-standalone-preset.js  
+2021-03-23 12:20:48.531 +01:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-03-23 12:20:48.527 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/swagger-ui.css  
+2021-03-23 12:20:48.549 +01:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-03-23 12:20:48.559 +01:00 [DBG] The request path /swagger/swagger-ui-bundle.js does not match an existing file
+2021-03-23 12:20:48.561 +01:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-03-23 12:20:48.565 +01:00 [DBG] The request path /swagger/swagger-ui-standalone-preset.js does not match an existing file
+2021-03-23 12:20:48.570 +01:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-03-23 12:20:48.577 +01:00 [DBG] The request path /swagger/swagger-ui.css does not match an existing file
+2021-03-23 12:20:48.578 +01:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-03-23 12:20:48.592 +01:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-03-23 12:20:48.731 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-03-23 12:20:48.747 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2021-03-23 12:20:48.758 +01:00 [INF] Request finished in 230.746ms 200 text/css
+2021-03-23 12:20:48.762 +01:00 [INF] Request finished in 235.1929ms 200 application/javascript
+2021-03-23 12:20:48.796 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2021-03-23 12:20:48.814 +01:00 [INF] Request finished in 286.608ms 200 application/javascript
+2021-03-23 12:20:49.006 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/v1/swagger.json  
+2021-03-23 12:20:49.008 +01:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-03-23 12:20:49.009 +01:00 [DBG] The request path /swagger/v1/swagger.json does not match an existing file
+2021-03-23 12:20:49.010 +01:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-03-23 12:20:49.058 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/favicon-32x32.png  
+2021-03-23 12:20:49.060 +01:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-03-23 12:20:49.064 +01:00 [DBG] The request path /swagger/favicon-32x32.png does not match an existing file
+2021-03-23 12:20:49.071 +01:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-03-23 12:20:49.074 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2021-03-23 12:20:49.080 +01:00 [INF] Request finished in 21.8746ms 200 image/png
+2021-03-23 12:20:49.845 +01:00 [INF] Request finished in 839.2315ms 200 application/json;charset=utf-8
+2021-03-23 12:20:57.452 +01:00 [DBG] Connection id "0HM7DTMN68MH2" received FIN.
+2021-03-23 12:20:57.452 +01:00 [DBG] Connection id "0HM7DTMN68MH1" received FIN.
+2021-03-23 12:20:57.460 +01:00 [DBG] Connection id "0HM7DTMN68MH2" is closed. The last processed stream ID was 0.
+2021-03-23 12:20:57.460 +01:00 [DBG] Connection id "0HM7DTMN68MH1" is closed. The last processed stream ID was 11.
+2021-03-23 12:20:57.462 +01:00 [DBG] Connection id "0HM7DTMN68MH2" sending FIN because: "The client closed the connection."
+2021-03-23 12:20:57.463 +01:00 [DBG] Connection id "0HM7DTMN68MH1" sending FIN because: "The client closed the connection."
+2021-03-23 12:20:57.468 +01:00 [DBG] Connection id "0HM7DTMN68MH1" stopped.
+2021-03-23 12:20:57.468 +01:00 [DBG] Connection id "0HM7DTMN68MH2" stopped.
+2021-03-23 12:24:21.993 +01:00 [INF] Application is shutting down...
+2021-03-23 12:24:21.995 +01:00 [DBG] Hosting stopping
+2021-03-23 12:24:22.001 +01:00 [DBG] Hosting stopped
+2021-03-23 13:49:51.696 +01:00 [INF] Please setup your database in order to have the RabbitMq messaging backup feature
+2021-03-23 13:49:52.036 +01:00 [INF] Please setup your database in order to have the RabbitMq messaging backup feature
+2021-03-23 13:49:56.482 +01:00 [DBG] Hosting starting
+2021-03-23 13:49:56.568 +01:00 [INF] User profile is available. Using 'C:\Users\apenahig\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-03-23 13:49:56.724 +01:00 [DBG] Reading data from file 'C:\Users\apenahig\AppData\Local\ASP.NET\DataProtection-Keys\key-9d073722-32c1-4422-88d8-684df3278e92.xml'.
+2021-03-23 13:49:56.759 +01:00 [DBG] Found key {9d073722-32c1-4422-88d8-684df3278e92}.
+2021-03-23 13:49:56.772 +01:00 [DBG] Considering key {9d073722-32c1-4422-88d8-684df3278e92} with expiration date 2021-06-21 11:20:35Z as default key.
+2021-03-23 13:49:56.781 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.13.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2021-03-23 13:49:56.785 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2021-03-23 13:49:56.789 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.13.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2021-03-23 13:49:56.793 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2021-03-23 13:49:56.798 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2021-03-23 13:49:56.803 +01:00 [DBG] Using key {9d073722-32c1-4422-88d8-684df3278e92} as the default key.
+2021-03-23 13:49:56.808 +01:00 [DBG] Key ring with default key {9d073722-32c1-4422-88d8-684df3278e92} was loaded during application startup.
+2021-03-23 13:49:56.926 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+2021-03-23 13:49:56.959 +01:00 [DBG] Initializing Razor view compiler with no compiled views.
+2021-03-23 13:49:57.003 +01:00 [DBG] Failed to locate the development https certificate at 'null'.
+2021-03-23 13:49:57.009 +01:00 [WRN] Overriding address(es) 'https://localhost:8085'. Binding to endpoints defined in UseKestrel() instead.
+2021-03-23 13:49:57.041 +01:00 [INF] Now listening on: https://0.0.0.0:8085
+2021-03-23 13:49:57.043 +01:00 [DBG] Loaded hosting startup assembly Devon4Net.Application.WebAPI
+2021-03-23 13:49:57.045 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-23 13:49:57.046 +01:00 [INF] Hosting environment: Development
+2021-03-23 13:49:57.047 +01:00 [INF] Content root path: C:\Users\apenahig\Source\Repos\devon4net\source\Templates\WebAPI\Devon4Net.Application.WebAPI
+2021-03-23 13:49:57.049 +01:00 [DBG] Hosting started
+2021-03-23 13:49:57.360 +01:00 [DBG] Connection id "0HM7DV8KUEU93" accepted.
+2021-03-23 13:49:57.363 +01:00 [DBG] Connection id "0HM7DV8KUEU93" started.
+2021-03-23 13:49:57.532 +01:00 [DBG] Connection id "0HM7DV8KUEU93" received FIN.
+2021-03-23 13:49:57.548 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Authentication failed because the remote party has closed the transport stream.
+   at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.PartialFrameCallback(AsyncProtocolRequest asyncRequest)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Security.SslStream.ThrowIfExceptional()
+   at System.Net.Security.SslStream.InternalEndProcessAuthentication(LazyAsyncResult lazyResult)
+   at System.Net.Security.SslStream.EndProcessAuthentication(IAsyncResult result)
+   at System.Net.Security.SslStream.EndAuthenticateAsServer(IAsyncResult asyncResult)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_1(IAsyncResult iar)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+2021-03-23 13:49:57.651 +01:00 [DBG] Connection id "0HM7DV8KUEU93" stopped.
+2021-03-23 13:49:57.655 +01:00 [DBG] Connection id "0HM7DV8KUEU93" sending FIN because: "The Socket transport's send loop completed gracefully."
+2021-03-23 13:49:59.759 +01:00 [DBG] Connection id "0HM7DV8KUEU94" accepted.
+2021-03-23 13:49:59.762 +01:00 [DBG] Connection id "0HM7DV8KUEU94" started.
+2021-03-23 13:49:59.863 +01:00 [DBG] Connection id "0HM7DV8KUEU94" received FIN.
+2021-03-23 13:49:59.868 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.StartSendAuthResetSignal(ProtocolToken message, AsyncProtocolRequest asyncRequest, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.CheckCompletionBeforeNextReceive(ProtocolToken message, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartSendBlob(Byte[] incoming, Int32 count, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ProcessReceivedBlob(Byte[] buffer, Int32 count, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.PartialFrameCallback(AsyncProtocolRequest asyncRequest)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Security.SslStream.ThrowIfExceptional()
+   at System.Net.Security.SslStream.InternalEndProcessAuthentication(LazyAsyncResult lazyResult)
+   at System.Net.Security.SslStream.EndProcessAuthentication(IAsyncResult result)
+   at System.Net.Security.SslStream.EndAuthenticateAsServer(IAsyncResult asyncResult)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_1(IAsyncResult iar)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+2021-03-23 13:49:59.930 +01:00 [DBG] Connection id "0HM7DV8KUEU94" stopped.
+2021-03-23 13:49:59.931 +01:00 [DBG] Connection id "0HM7DV8KUEU94" sending FIN because: "The Socket transport's send loop completed gracefully."
+2021-03-23 13:50:00.026 +01:00 [DBG] Connection id "0HM7DV8KUEU95" accepted.
+2021-03-23 13:50:00.027 +01:00 [DBG] Connection id "0HM7DV8KUEU95" started.
+2021-03-23 13:50:00.031 +01:00 [DBG] Connection id "0HM7DV8KUEU95" received FIN.
+2021-03-23 13:50:00.031 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.StartSendAuthResetSignal(ProtocolToken message, AsyncProtocolRequest asyncRequest, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.CheckCompletionBeforeNextReceive(ProtocolToken message, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartSendBlob(Byte[] incoming, Int32 count, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ProcessReceivedBlob(Byte[] buffer, Int32 count, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.PartialFrameCallback(AsyncProtocolRequest asyncRequest)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Security.SslStream.ThrowIfExceptional()
+   at System.Net.Security.SslStream.InternalEndProcessAuthentication(LazyAsyncResult lazyResult)
+   at System.Net.Security.SslStream.EndProcessAuthentication(IAsyncResult result)
+   at System.Net.Security.SslStream.EndAuthenticateAsServer(IAsyncResult asyncResult)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_1(IAsyncResult iar)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+2021-03-23 13:50:00.078 +01:00 [DBG] Connection id "0HM7DV8KUEU95" stopped.
+2021-03-23 13:50:00.080 +01:00 [DBG] Connection id "0HM7DV8KUEU95" sending FIN because: "The Socket transport's send loop completed gracefully."
+2021-03-23 13:50:00.178 +01:00 [DBG] Connection id "0HM7DV8KUEU96" accepted.
+2021-03-23 13:50:00.181 +01:00 [DBG] Connection id "0HM7DV8KUEU96" started.
+2021-03-23 13:50:00.312 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/index.html  
+2021-03-23 13:50:00.317 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2021-03-23 13:50:00.319 +01:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-03-23 13:50:00.333 +01:00 [DBG] The request path /swagger/index.html does not match an existing file
+2021-03-23 13:50:00.336 +01:00 [DBG] Connection id "0HM7DV8KUEU97" accepted.
+2021-03-23 13:50:00.341 +01:00 [DBG] Connection id "0HM7DV8KUEU97" started.
+2021-03-23 13:50:00.359 +01:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-03-23 13:50:00.519 +01:00 [INF] Request finished in 208.0404ms 200 text/html;charset=utf-8
+2021-03-23 13:50:00.567 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/swagger-ui.css  
+2021-03-23 13:50:00.567 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/swagger-ui-standalone-preset.js  
+2021-03-23 13:50:00.567 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/swagger-ui-bundle.js  
+2021-03-23 13:50:00.568 +01:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-03-23 13:50:00.570 +01:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-03-23 13:50:00.572 +01:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-03-23 13:50:00.577 +01:00 [DBG] The request path /swagger/swagger-ui.css does not match an existing file
+2021-03-23 13:50:00.579 +01:00 [DBG] The request path /swagger/swagger-ui-standalone-preset.js does not match an existing file
+2021-03-23 13:50:00.592 +01:00 [DBG] The request path /swagger/swagger-ui-bundle.js does not match an existing file
+2021-03-23 13:50:00.610 +01:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-03-23 13:50:00.615 +01:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-03-23 13:50:00.617 +01:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-03-23 13:50:00.794 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-03-23 13:50:00.802 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2021-03-23 13:50:00.810 +01:00 [INF] Request finished in 242.9542ms 200 application/javascript
+2021-03-23 13:50:00.810 +01:00 [INF] Request finished in 243.0948ms 200 text/css
+2021-03-23 13:50:00.866 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2021-03-23 13:50:00.868 +01:00 [INF] Request finished in 300.9124ms 200 application/javascript
+2021-03-23 13:50:01.024 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/v1/swagger.json  
+2021-03-23 13:50:01.025 +01:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-03-23 13:50:01.026 +01:00 [DBG] The request path /swagger/v1/swagger.json does not match an existing file
+2021-03-23 13:50:01.027 +01:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-03-23 13:50:01.073 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/favicon-32x32.png  
+2021-03-23 13:50:01.074 +01:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-03-23 13:50:01.076 +01:00 [DBG] The request path /swagger/favicon-32x32.png does not match an existing file
+2021-03-23 13:50:01.078 +01:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-03-23 13:50:01.081 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2021-03-23 13:50:01.083 +01:00 [INF] Request finished in 10.032ms 200 image/png
+2021-03-23 13:50:02.264 +01:00 [INF] Request finished in 1240.1253ms 200 application/json;charset=utf-8
+2021-03-23 13:56:25.955 +01:00 [DBG] Connection id "0HM7DV8KUEU97" received FIN.
+2021-03-23 13:56:25.966 +01:00 [DBG] Connection id "0HM7DV8KUEU97" is closed. The last processed stream ID was 0.
+2021-03-23 13:56:25.971 +01:00 [DBG] Connection id "0HM7DV8KUEU97" sending FIN because: "The client closed the connection."
+2021-03-23 13:56:25.975 +01:00 [DBG] Connection id "0HM7DV8KUEU97" stopped.
+2021-03-23 13:56:33.660 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/index.html  
+2021-03-23 13:56:33.662 +01:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-03-23 13:56:33.663 +01:00 [DBG] The request path /index.html does not match an existing file
+2021-03-23 13:56:33.665 +01:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-03-23 13:56:33.668 +01:00 [DBG] The request path  does not match the path filter
+2021-03-23 13:56:33.697 +01:00 [DBG] No candidates found for the request path '/index.html'
+2021-03-23 13:56:33.701 +01:00 [DBG] Request did not match any endpoints
+2021-03-23 13:56:33.840 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-03-23 13:56:33.871 +01:00 [DBG] Request did not match any routes
+2021-03-23 13:56:33.872 +01:00 [INF] Request finished in 212.7855ms 404 
+2021-03-23 13:57:00.707 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/  
+2021-03-23 13:57:00.711 +01:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-03-23 13:57:00.715 +01:00 [DBG] The request path / does not match a supported file type
+2021-03-23 13:57:00.719 +01:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-03-23 13:57:00.721 +01:00 [DBG] The request path  does not match the path filter
+2021-03-23 13:57:00.723 +01:00 [DBG] No candidates found for the request path '/'
+2021-03-23 13:57:00.727 +01:00 [DBG] Request did not match any endpoints
+2021-03-23 13:57:00.732 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-03-23 13:57:00.739 +01:00 [DBG] Request did not match any routes
+2021-03-23 13:57:00.744 +01:00 [INF] Request finished in 37.4821ms 404 
+2021-03-23 13:57:03.071 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/  
+2021-03-23 13:57:03.073 +01:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-03-23 13:57:03.074 +01:00 [DBG] The request path / does not match a supported file type
+2021-03-23 13:57:03.079 +01:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-03-23 13:57:03.084 +01:00 [DBG] The request path  does not match the path filter
+2021-03-23 13:57:03.088 +01:00 [DBG] No candidates found for the request path '/'
+2021-03-23 13:57:03.089 +01:00 [DBG] Request did not match any endpoints
+2021-03-23 13:57:03.094 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-03-23 13:57:03.097 +01:00 [DBG] Request did not match any routes
+2021-03-23 13:57:03.100 +01:00 [INF] Request finished in 29.0383ms 404 
+2021-03-23 13:57:07.613 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/  
+2021-03-23 13:57:07.615 +01:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-03-23 13:57:07.618 +01:00 [DBG] The request path / does not match a supported file type
+2021-03-23 13:57:07.620 +01:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-03-23 13:57:07.623 +01:00 [DBG] The request path  does not match the path filter
+2021-03-23 13:57:07.624 +01:00 [DBG] No candidates found for the request path '/'
+2021-03-23 13:57:07.629 +01:00 [DBG] Request did not match any endpoints
+2021-03-23 13:57:07.640 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-03-23 13:57:07.647 +01:00 [DBG] Request did not match any routes
+2021-03-23 13:57:07.653 +01:00 [INF] Request finished in 40.2336ms 404 
+2021-03-23 13:57:27.987 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/  
+2021-03-23 13:57:27.990 +01:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-03-23 13:57:27.994 +01:00 [DBG] The request path / does not match a supported file type
+2021-03-23 13:57:27.996 +01:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-03-23 13:57:27.998 +01:00 [DBG] The request path  does not match the path filter
+2021-03-23 13:57:28.000 +01:00 [DBG] No candidates found for the request path '/'
+2021-03-23 13:57:28.002 +01:00 [DBG] Request did not match any endpoints
+2021-03-23 13:57:28.004 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-03-23 13:57:28.012 +01:00 [DBG] Request did not match any routes
+2021-03-23 13:57:28.018 +01:00 [INF] Request finished in 31.2583ms 404 
+2021-03-23 13:58:08.698 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/Employee  
+2021-03-23 13:58:08.700 +01:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-03-23 13:58:08.700 +01:00 [DBG] The request path /Employee does not match a supported file type
+2021-03-23 13:58:08.702 +01:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-03-23 13:58:08.704 +01:00 [DBG] The request path  does not match the path filter
+2021-03-23 13:58:08.705 +01:00 [DBG] No candidates found for the request path '/Employee'
+2021-03-23 13:58:08.706 +01:00 [DBG] Request did not match any endpoints
+2021-03-23 13:58:08.707 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-03-23 13:58:08.708 +01:00 [DBG] Request successfully matched the route with name 'null' and template 'Employee'
+2021-03-23 13:58:08.719 +01:00 [DBG] Action 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.Create (Devon4Net.WebAPI.Implementation)' with id '392636e7-9874-4994-84e1-ec2b859b8d15' did not match the constraint 'Microsoft.AspNetCore.Mvc.Cors.CorsHttpMethodActionConstraint'
+2021-03-23 13:58:08.726 +01:00 [DBG] Action 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.Delete (Devon4Net.WebAPI.Implementation)' with id '1cc24af6-88f8-4dfc-b818-065c5324558a' did not match the constraint 'Microsoft.AspNetCore.Mvc.Cors.CorsHttpMethodActionConstraint'
+2021-03-23 13:58:08.735 +01:00 [DBG] Action 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.ModifyEmployee (Devon4Net.WebAPI.Implementation)' with id '213aab7a-40b8-4fc7-9dac-cf0b93ed8a79' did not match the constraint 'Microsoft.AspNetCore.Mvc.Cors.CorsHttpMethodActionConstraint'
+2021-03-23 13:58:08.802 +01:00 [INF] Route matched with {action = "GetEmployee", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetEmployee() on controller Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController (Devon4Net.WebAPI.Implementation).
+2021-03-23 13:58:08.807 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter (Order: -2147483548)"]
+2021-03-23 13:58:08.808 +01:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2021-03-23 13:58:08.810 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2021-03-23 13:58:08.812 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2021-03-23 13:58:08.812 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2021-03-23 13:58:08.816 +01:00 [DBG] Executing controller factory for controller Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController (Devon4Net.WebAPI.Implementation)
+2021-03-23 13:58:08.930 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2021-03-23 13:58:08.950 +01:00 [DBG] Executed controller factory for controller Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController (Devon4Net.WebAPI.Implementation)
+2021-03-23 13:58:08.955 +01:00 [DBG] Executing GetEmployee from controller EmployeeController
+2021-03-23 13:58:08.961 +01:00 [DBG] GetEmployee method from service Employeeervice
+2021-03-23 13:58:08.962 +01:00 [DBG] GetTodo method from TodoRepository Employeeervice
+2021-03-23 13:58:09.276 +01:00 [INF] Entity Framework Core 3.1.10 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=Employee 
+2021-03-23 13:58:09.413 +01:00 [DBG] queryContext => new QueryingEnumerable<Employee>(
+    queryContext, 
+    InMemoryShapedQueryCompilingExpressionVisitor.Table(
+        queryContext: queryContext, 
+        entityType: EntityType: Employee)
+        .Select(valueBuffer => new ValueBuffer(new object[]
+        { 
+            (object)EntityMaterializerSource.TryReadValue<long>(valueBuffer, 0, Property: Employee.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd), 
+            EntityMaterializerSource.TryReadValue<string>(valueBuffer, 1, Property: Employee.Mail (string) Required MaxLength255), 
+            EntityMaterializerSource.TryReadValue<string>(valueBuffer, 2, Property: Employee.Name (string) Required MaxLength255), 
+            EntityMaterializerSource.TryReadValue<string>(valueBuffer, 3, Property: Employee.Surname (string) Required MaxLength255) 
+        })), 
+    Func<QueryContext, ValueBuffer, Employee>, 
+    Devon4Net.WebAPI.Implementation.Domain.Database.EmployeeContext, 
+    null
+)
+2021-03-23 13:58:09.429 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2021-03-23 13:58:09.439 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2021-03-23 13:58:09.441 +01:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2021-03-23 13:58:09.443 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2021-03-23 13:58:09.444 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2021-03-23 13:58:09.450 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2021-03-23 13:58:09.451 +01:00 [INF] Executing ObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[Devon4Net.WebAPI.Implementation.Domain.Entities.Employee, Devon4Net.WebAPI.Implementation, Version=3.1.5.0, Culture=neutral, PublicKeyToken=null],[Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Dto.EmployeeDto, Devon4Net.WebAPI.Implementation, Version=3.1.5.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-03-23 13:58:09.464 +01:00 [INF] Executed action Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.GetEmployee (Devon4Net.WebAPI.Implementation) in 646.1379ms
+2021-03-23 13:58:09.468 +01:00 [DBG] 'EmployeeContext' disposed.
+2021-03-23 13:58:09.476 +01:00 [INF] Request finished in 777.7713ms 200 application/json; charset=utf-8
+2021-03-23 13:58:25.717 +01:00 [INF] Request starting HTTP/2 POST https://localhost:8085/Employee application/json 59
+2021-03-23 13:58:25.719 +01:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-03-23 13:58:25.721 +01:00 [DBG] POST requests are not supported
+2021-03-23 13:58:25.722 +01:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-03-23 13:58:25.723 +01:00 [DBG] POST requests are not supported
+2021-03-23 13:58:25.724 +01:00 [DBG] No candidates found for the request path '/Employee'
+2021-03-23 13:58:25.725 +01:00 [DBG] Request did not match any endpoints
+2021-03-23 13:58:25.726 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-03-23 13:58:25.728 +01:00 [DBG] Request successfully matched the route with name 'null' and template 'Employee'
+2021-03-23 13:58:25.742 +01:00 [DBG] Action 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.GetEmployee (Devon4Net.WebAPI.Implementation)' with id 'd56d6140-d5fc-4b52-9450-1941339ea9e4' did not match the constraint 'Microsoft.AspNetCore.Mvc.Cors.CorsHttpMethodActionConstraint'
+2021-03-23 13:58:25.755 +01:00 [DBG] Action 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.Delete (Devon4Net.WebAPI.Implementation)' with id '1cc24af6-88f8-4dfc-b818-065c5324558a' did not match the constraint 'Microsoft.AspNetCore.Mvc.Cors.CorsHttpMethodActionConstraint'
+2021-03-23 13:58:25.764 +01:00 [DBG] Action 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.ModifyEmployee (Devon4Net.WebAPI.Implementation)' with id '213aab7a-40b8-4fc7-9dac-cf0b93ed8a79' did not match the constraint 'Microsoft.AspNetCore.Mvc.Cors.CorsHttpMethodActionConstraint'
+2021-03-23 13:58:25.789 +01:00 [INF] Route matched with {action = "Create", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Create(Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Dto.EmployeeDto) on controller Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController (Devon4Net.WebAPI.Implementation).
+2021-03-23 13:58:25.794 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter (Order: -2147483548)"]
+2021-03-23 13:58:25.797 +01:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2021-03-23 13:58:25.802 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2021-03-23 13:58:25.806 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2021-03-23 13:58:25.807 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2021-03-23 13:58:25.809 +01:00 [DBG] The request has an origin header: 'https://localhost:8085'.
+2021-03-23 13:58:25.809 +01:00 [INF] CORS policy execution successful.
+2021-03-23 13:58:25.812 +01:00 [DBG] Executing controller factory for controller Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController (Devon4Net.WebAPI.Implementation)
+2021-03-23 13:58:25.815 +01:00 [DBG] Executed controller factory for controller Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController (Devon4Net.WebAPI.Implementation)
+2021-03-23 13:58:25.862 +01:00 [DBG] Attempting to bind parameter 'employeeDto' of type 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Dto.EmployeeDto' ...
+2021-03-23 13:58:25.870 +01:00 [DBG] Attempting to bind parameter 'employeeDto' of type 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Dto.EmployeeDto' using the name '' in request data ...
+2021-03-23 13:58:25.873 +01:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2021-03-23 13:58:25.880 +01:00 [DBG] Connection id "0HM7DV8KUEU96", Request id "0HM7DV8KUEU96:00000019": started reading request body.
+2021-03-23 13:58:25.882 +01:00 [DBG] Connection id "0HM7DV8KUEU96", Request id "0HM7DV8KUEU96:00000019": done reading request body.
+2021-03-23 13:58:25.889 +01:00 [DBG] JSON input formatter succeeded, deserializing to type 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Dto.EmployeeDto'
+2021-03-23 13:58:25.893 +01:00 [DBG] Done attempting to bind parameter 'employeeDto' of type 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Dto.EmployeeDto'.
+2021-03-23 13:58:25.898 +01:00 [DBG] Done attempting to bind parameter 'employeeDto' of type 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Dto.EmployeeDto'.
+2021-03-23 13:58:25.900 +01:00 [DBG] Attempting to validate the bound parameter 'employeeDto' of type 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Dto.EmployeeDto' ...
+2021-03-23 13:58:25.913 +01:00 [DBG] Done attempting to validate the bound parameter 'employeeDto' of type 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Dto.EmployeeDto'.
+2021-03-23 13:58:25.918 +01:00 [DBG] Executing GetEmployee from controller EmployeeController
+2021-03-23 13:58:25.924 +01:00 [DBG] SetEmployee method from service Employeeervice with value : string, string, string
+2021-03-23 13:58:25.930 +01:00 [DBG] SetTodo method from repository Employeeervice with value : string
+2021-03-23 13:58:25.935 +01:00 [INF] Entity Framework Core 3.1.10 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=Employee 
+2021-03-23 13:58:25.993 +01:00 [DBG] 'EmployeeContext' generated a value for the 'Id' property of new 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2021-03-23 13:58:26.026 +01:00 [DBG] Context 'EmployeeContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2021-03-23 13:58:26.033 +01:00 [DBG] SaveChanges starting for 'EmployeeContext'.
+2021-03-23 13:58:26.038 +01:00 [DBG] DetectChanges starting for 'EmployeeContext'.
+2021-03-23 13:58:26.049 +01:00 [DBG] DetectChanges completed for 'EmployeeContext'.
+2021-03-23 13:58:26.075 +01:00 [INF] Saved 1 entities to in-memory store.
+2021-03-23 13:58:26.086 +01:00 [DBG] An 'Employee' entity tracked by 'EmployeeContext' changed from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2021-03-23 13:58:26.091 +01:00 [DBG] SaveChanges completed for 'EmployeeContext' with 1 entities written to the database.
+2021-03-23 13:58:26.095 +01:00 [DBG] An 'Employee' entity tracked by 'EmployeeContext' changed from '"Unchanged"' to '"Detached"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2021-03-23 13:58:26.099 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2021-03-23 13:58:26.102 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2021-03-23 13:58:26.104 +01:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2021-03-23 13:58:26.110 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2021-03-23 13:58:26.111 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2021-03-23 13:58:26.116 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2021-03-23 13:58:26.117 +01:00 [INF] Executing ObjectResult, writing value of type 'Devon4Net.WebAPI.Implementation.Domain.Entities.Employee'.
+2021-03-23 13:58:26.123 +01:00 [INF] Executed action Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.Create (Devon4Net.WebAPI.Implementation) in 314.3255ms
+2021-03-23 13:58:26.126 +01:00 [DBG] 'EmployeeContext' disposed.
+2021-03-23 13:58:26.130 +01:00 [INF] Request finished in 413.3823ms 201 application/json; charset=utf-8
+2021-03-23 13:58:41.705 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/Employee  
+2021-03-23 13:58:41.706 +01:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-03-23 13:58:41.709 +01:00 [DBG] The request path /Employee does not match a supported file type
+2021-03-23 13:58:41.710 +01:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-03-23 13:58:41.711 +01:00 [DBG] The request path  does not match the path filter
+2021-03-23 13:58:41.712 +01:00 [DBG] No candidates found for the request path '/Employee'
+2021-03-23 13:58:41.713 +01:00 [DBG] Request did not match any endpoints
+2021-03-23 13:58:41.714 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-03-23 13:58:41.715 +01:00 [DBG] Request successfully matched the route with name 'null' and template 'Employee'
+2021-03-23 13:58:41.716 +01:00 [DBG] Action 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.Create (Devon4Net.WebAPI.Implementation)' with id '392636e7-9874-4994-84e1-ec2b859b8d15' did not match the constraint 'Microsoft.AspNetCore.Mvc.Cors.CorsHttpMethodActionConstraint'
+2021-03-23 13:58:41.718 +01:00 [DBG] Action 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.Delete (Devon4Net.WebAPI.Implementation)' with id '1cc24af6-88f8-4dfc-b818-065c5324558a' did not match the constraint 'Microsoft.AspNetCore.Mvc.Cors.CorsHttpMethodActionConstraint'
+2021-03-23 13:58:41.719 +01:00 [DBG] Action 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.ModifyEmployee (Devon4Net.WebAPI.Implementation)' with id '213aab7a-40b8-4fc7-9dac-cf0b93ed8a79' did not match the constraint 'Microsoft.AspNetCore.Mvc.Cors.CorsHttpMethodActionConstraint'
+2021-03-23 13:58:41.722 +01:00 [INF] Route matched with {action = "GetEmployee", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetEmployee() on controller Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController (Devon4Net.WebAPI.Implementation).
+2021-03-23 13:58:41.728 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter (Order: -2147483548)"]
+2021-03-23 13:58:41.730 +01:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2021-03-23 13:58:41.733 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2021-03-23 13:58:41.737 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2021-03-23 13:58:41.743 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2021-03-23 13:58:41.752 +01:00 [DBG] Executing controller factory for controller Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController (Devon4Net.WebAPI.Implementation)
+2021-03-23 13:58:41.770 +01:00 [DBG] Executed controller factory for controller Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController (Devon4Net.WebAPI.Implementation)
+2021-03-23 13:58:41.773 +01:00 [DBG] Executing GetEmployee from controller EmployeeController
+2021-03-23 13:58:41.778 +01:00 [DBG] GetEmployee method from service Employeeervice
+2021-03-23 13:58:41.779 +01:00 [DBG] GetTodo method from TodoRepository Employeeervice
+2021-03-23 13:58:41.812 +01:00 [INF] Entity Framework Core 3.1.10 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=Employee 
+2021-03-23 13:58:41.821 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2021-03-23 13:58:41.825 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2021-03-23 13:58:41.826 +01:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2021-03-23 13:58:41.828 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2021-03-23 13:58:41.830 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2021-03-23 13:58:41.838 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2021-03-23 13:58:41.840 +01:00 [INF] Executing ObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[Devon4Net.WebAPI.Implementation.Domain.Entities.Employee, Devon4Net.WebAPI.Implementation, Version=3.1.5.0, Culture=neutral, PublicKeyToken=null],[Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Dto.EmployeeDto, Devon4Net.WebAPI.Implementation, Version=3.1.5.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-03-23 13:58:41.844 +01:00 [INF] Executed action Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.GetEmployee (Devon4Net.WebAPI.Implementation) in 92.3322ms
+2021-03-23 13:58:41.852 +01:00 [DBG] 'EmployeeContext' disposed.
+2021-03-23 13:58:41.855 +01:00 [INF] Request finished in 150.917ms 200 application/json; charset=utf-8
+2021-03-23 13:59:04.220 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/Employee  
+2021-03-23 13:59:04.223 +01:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-03-23 13:59:04.224 +01:00 [DBG] The request path /Employee does not match a supported file type
+2021-03-23 13:59:04.225 +01:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-03-23 13:59:04.228 +01:00 [DBG] The request path  does not match the path filter
+2021-03-23 13:59:04.229 +01:00 [DBG] No candidates found for the request path '/Employee'
+2021-03-23 13:59:04.231 +01:00 [DBG] Request did not match any endpoints
+2021-03-23 13:59:04.233 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-03-23 13:59:04.238 +01:00 [DBG] Request successfully matched the route with name 'null' and template 'Employee'
+2021-03-23 13:59:04.252 +01:00 [DBG] Action 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.Create (Devon4Net.WebAPI.Implementation)' with id '392636e7-9874-4994-84e1-ec2b859b8d15' did not match the constraint 'Microsoft.AspNetCore.Mvc.Cors.CorsHttpMethodActionConstraint'
+2021-03-23 13:59:04.255 +01:00 [DBG] Action 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.Delete (Devon4Net.WebAPI.Implementation)' with id '1cc24af6-88f8-4dfc-b818-065c5324558a' did not match the constraint 'Microsoft.AspNetCore.Mvc.Cors.CorsHttpMethodActionConstraint'
+2021-03-23 13:59:04.257 +01:00 [DBG] Action 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.ModifyEmployee (Devon4Net.WebAPI.Implementation)' with id '213aab7a-40b8-4fc7-9dac-cf0b93ed8a79' did not match the constraint 'Microsoft.AspNetCore.Mvc.Cors.CorsHttpMethodActionConstraint'
+2021-03-23 13:59:04.270 +01:00 [INF] Route matched with {action = "GetEmployee", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetEmployee() on controller Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController (Devon4Net.WebAPI.Implementation).
+2021-03-23 13:59:04.275 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter (Order: -2147483548)"]
+2021-03-23 13:59:04.283 +01:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2021-03-23 13:59:04.286 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2021-03-23 13:59:04.288 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2021-03-23 13:59:04.293 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2021-03-23 13:59:04.301 +01:00 [DBG] Executing controller factory for controller Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController (Devon4Net.WebAPI.Implementation)
+2021-03-23 13:59:04.305 +01:00 [DBG] Executed controller factory for controller Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController (Devon4Net.WebAPI.Implementation)
+2021-03-23 13:59:04.310 +01:00 [DBG] Executing GetEmployee from controller EmployeeController
+2021-03-23 13:59:04.317 +01:00 [DBG] GetEmployee method from service Employeeervice
+2021-03-23 13:59:04.319 +01:00 [DBG] GetTodo method from TodoRepository Employeeervice
+2021-03-23 13:59:04.322 +01:00 [INF] Entity Framework Core 3.1.10 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=Employee 
+2021-03-23 13:59:04.331 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2021-03-23 13:59:04.337 +01:00 [DBG] No information found on request to perform content negotiation.
+2021-03-23 13:59:04.340 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2021-03-23 13:59:04.344 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2021-03-23 13:59:04.348 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2021-03-23 13:59:04.349 +01:00 [INF] Executing ObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[Devon4Net.WebAPI.Implementation.Domain.Entities.Employee, Devon4Net.WebAPI.Implementation, Version=3.1.5.0, Culture=neutral, PublicKeyToken=null],[Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Dto.EmployeeDto, Devon4Net.WebAPI.Implementation, Version=3.1.5.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-03-23 13:59:04.351 +01:00 [INF] Executed action Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.GetEmployee (Devon4Net.WebAPI.Implementation) in 50.7279ms
+2021-03-23 13:59:04.355 +01:00 [DBG] 'EmployeeContext' disposed.
+2021-03-23 13:59:04.359 +01:00 [INF] Request finished in 139.7193ms 200 application/json; charset=utf-8
+2021-03-23 13:59:04.421 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/favicon.ico  
+2021-03-23 13:59:04.423 +01:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-03-23 13:59:04.426 +01:00 [DBG] The request path /favicon.ico does not match an existing file
+2021-03-23 13:59:04.427 +01:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-03-23 13:59:04.430 +01:00 [DBG] The request path  does not match the path filter
+2021-03-23 13:59:04.431 +01:00 [DBG] No candidates found for the request path '/favicon.ico'
+2021-03-23 13:59:04.433 +01:00 [DBG] Request did not match any endpoints
+2021-03-23 13:59:04.438 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-03-23 13:59:04.441 +01:00 [DBG] Request did not match any routes
+2021-03-23 13:59:04.448 +01:00 [INF] Request finished in 26.57ms 404 
+2021-03-23 13:59:22.634 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/Employee  
+2021-03-23 13:59:22.636 +01:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-03-23 13:59:22.637 +01:00 [DBG] The request path /Employee does not match a supported file type
+2021-03-23 13:59:22.639 +01:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-03-23 13:59:22.640 +01:00 [DBG] The request path  does not match the path filter
+2021-03-23 13:59:22.641 +01:00 [DBG] No candidates found for the request path '/Employee'
+2021-03-23 13:59:22.641 +01:00 [DBG] Request did not match any endpoints
+2021-03-23 13:59:22.643 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-03-23 13:59:22.644 +01:00 [DBG] Request successfully matched the route with name 'null' and template 'Employee'
+2021-03-23 13:59:22.647 +01:00 [DBG] Action 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.Create (Devon4Net.WebAPI.Implementation)' with id '392636e7-9874-4994-84e1-ec2b859b8d15' did not match the constraint 'Microsoft.AspNetCore.Mvc.Cors.CorsHttpMethodActionConstraint'
+2021-03-23 13:59:22.654 +01:00 [DBG] Action 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.Delete (Devon4Net.WebAPI.Implementation)' with id '1cc24af6-88f8-4dfc-b818-065c5324558a' did not match the constraint 'Microsoft.AspNetCore.Mvc.Cors.CorsHttpMethodActionConstraint'
+2021-03-23 13:59:22.659 +01:00 [DBG] Action 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.ModifyEmployee (Devon4Net.WebAPI.Implementation)' with id '213aab7a-40b8-4fc7-9dac-cf0b93ed8a79' did not match the constraint 'Microsoft.AspNetCore.Mvc.Cors.CorsHttpMethodActionConstraint'
+2021-03-23 13:59:22.664 +01:00 [INF] Route matched with {action = "GetEmployee", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetEmployee() on controller Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController (Devon4Net.WebAPI.Implementation).
+2021-03-23 13:59:22.685 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter (Order: -2147483548)"]
+2021-03-23 13:59:22.690 +01:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2021-03-23 13:59:22.706 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2021-03-23 13:59:22.714 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2021-03-23 13:59:22.717 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2021-03-23 13:59:22.720 +01:00 [DBG] Executing controller factory for controller Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController (Devon4Net.WebAPI.Implementation)
+2021-03-23 13:59:22.722 +01:00 [DBG] Executed controller factory for controller Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController (Devon4Net.WebAPI.Implementation)
+2021-03-23 13:59:22.723 +01:00 [DBG] Executing GetEmployee from controller EmployeeController
+2021-03-23 13:59:22.724 +01:00 [DBG] GetEmployee method from service Employeeervice
+2021-03-23 13:59:22.725 +01:00 [DBG] GetTodo method from TodoRepository Employeeervice
+2021-03-23 13:59:22.738 +01:00 [INF] Entity Framework Core 3.1.10 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=Employee 
+2021-03-23 13:59:22.745 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2021-03-23 13:59:22.752 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2021-03-23 13:59:22.753 +01:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2021-03-23 13:59:22.754 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2021-03-23 13:59:22.755 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2021-03-23 13:59:22.756 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2021-03-23 13:59:22.757 +01:00 [INF] Executing ObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[Devon4Net.WebAPI.Implementation.Domain.Entities.Employee, Devon4Net.WebAPI.Implementation, Version=3.1.5.0, Culture=neutral, PublicKeyToken=null],[Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Dto.EmployeeDto, Devon4Net.WebAPI.Implementation, Version=3.1.5.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-03-23 13:59:22.765 +01:00 [INF] Executed action Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.GetEmployee (Devon4Net.WebAPI.Implementation) in 45.2657ms
+2021-03-23 13:59:22.769 +01:00 [DBG] 'EmployeeContext' disposed.
+2021-03-23 13:59:22.770 +01:00 [INF] Request finished in 136.6843ms 200 application/json; charset=utf-8
+2021-03-23 13:59:47.686 +01:00 [INF] Request starting HTTP/2 PUT https://localhost:8085/Employee application/json 59
+2021-03-23 13:59:47.687 +01:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-03-23 13:59:47.688 +01:00 [DBG] PUT requests are not supported
+2021-03-23 13:59:47.690 +01:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-03-23 13:59:47.694 +01:00 [DBG] PUT requests are not supported
+2021-03-23 13:59:47.695 +01:00 [DBG] No candidates found for the request path '/Employee'
+2021-03-23 13:59:47.696 +01:00 [DBG] Request did not match any endpoints
+2021-03-23 13:59:47.697 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-03-23 13:59:47.698 +01:00 [DBG] Request successfully matched the route with name 'null' and template 'Employee'
+2021-03-23 13:59:47.699 +01:00 [DBG] Action 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.GetEmployee (Devon4Net.WebAPI.Implementation)' with id 'd56d6140-d5fc-4b52-9450-1941339ea9e4' did not match the constraint 'Microsoft.AspNetCore.Mvc.Cors.CorsHttpMethodActionConstraint'
+2021-03-23 13:59:47.700 +01:00 [DBG] Action 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.Create (Devon4Net.WebAPI.Implementation)' with id '392636e7-9874-4994-84e1-ec2b859b8d15' did not match the constraint 'Microsoft.AspNetCore.Mvc.Cors.CorsHttpMethodActionConstraint'
+2021-03-23 13:59:47.702 +01:00 [DBG] Action 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.Delete (Devon4Net.WebAPI.Implementation)' with id '1cc24af6-88f8-4dfc-b818-065c5324558a' did not match the constraint 'Microsoft.AspNetCore.Mvc.Cors.CorsHttpMethodActionConstraint'
+2021-03-23 13:59:47.739 +01:00 [INF] Route matched with {action = "ModifyEmployee", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] ModifyEmployee(Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Dto.EmployeeDto) on controller Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController (Devon4Net.WebAPI.Implementation).
+2021-03-23 13:59:47.752 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter (Order: -2147483548)"]
+2021-03-23 13:59:47.756 +01:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2021-03-23 13:59:47.764 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2021-03-23 13:59:47.773 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2021-03-23 13:59:47.777 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2021-03-23 13:59:47.778 +01:00 [DBG] The request has an origin header: 'https://localhost:8085'.
+2021-03-23 13:59:47.779 +01:00 [INF] CORS policy execution successful.
+2021-03-23 13:59:47.780 +01:00 [DBG] Executing controller factory for controller Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController (Devon4Net.WebAPI.Implementation)
+2021-03-23 13:59:47.781 +01:00 [DBG] Executed controller factory for controller Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController (Devon4Net.WebAPI.Implementation)
+2021-03-23 13:59:47.786 +01:00 [DBG] Attempting to bind parameter 'employeeDto' of type 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Dto.EmployeeDto' ...
+2021-03-23 13:59:47.792 +01:00 [DBG] Attempting to bind parameter 'employeeDto' of type 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Dto.EmployeeDto' using the name '' in request data ...
+2021-03-23 13:59:47.794 +01:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2021-03-23 13:59:47.796 +01:00 [DBG] Connection id "0HM7DV8KUEU96", Request id "0HM7DV8KUEU96:00000023": started reading request body.
+2021-03-23 13:59:47.799 +01:00 [DBG] Connection id "0HM7DV8KUEU96", Request id "0HM7DV8KUEU96:00000023": done reading request body.
+2021-03-23 13:59:47.801 +01:00 [DBG] JSON input formatter succeeded, deserializing to type 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Dto.EmployeeDto'
+2021-03-23 13:59:47.805 +01:00 [DBG] Done attempting to bind parameter 'employeeDto' of type 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Dto.EmployeeDto'.
+2021-03-23 13:59:47.808 +01:00 [DBG] Done attempting to bind parameter 'employeeDto' of type 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Dto.EmployeeDto'.
+2021-03-23 13:59:47.809 +01:00 [DBG] Attempting to validate the bound parameter 'employeeDto' of type 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Dto.EmployeeDto' ...
+2021-03-23 13:59:47.811 +01:00 [DBG] Done attempting to validate the bound parameter 'employeeDto' of type 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Dto.EmployeeDto'.
+2021-03-23 13:59:47.816 +01:00 [DBG] Executing ModifyEmployee from controller EmployeeController
+2021-03-23 13:59:47.820 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2021-03-23 13:59:47.822 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2021-03-23 13:59:47.823 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2021-03-23 13:59:47.825 +01:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-03-23 13:59:47.827 +01:00 [INF] Executed action Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.ModifyEmployee (Devon4Net.WebAPI.Implementation) in 48.7783ms
+2021-03-23 13:59:47.832 +01:00 [INF] Request finished in 145.9904ms 400 text/plain; charset=utf-8
+2021-03-23 14:23:12.872 +01:00 [DBG] Connection id "0HM7DV8KUEU96" received FIN.
+2021-03-23 14:23:13.439 +01:00 [DBG] Connection id "0HM7DV8KUEU96" is closed. The last processed stream ID was 35.
+2021-03-23 14:23:13.895 +01:00 [DBG] Connection id "0HM7DV8KUEU96" sending FIN because: "The client closed the connection."
+2021-03-23 14:23:14.042 +01:00 [DBG] Connection id "0HM7DV8KUEU96" stopped.
+2021-03-23 15:02:46.284 +01:00 [INF] Please setup your database in order to have the RabbitMq messaging backup feature
+2021-03-23 15:02:46.679 +01:00 [INF] Please setup your database in order to have the RabbitMq messaging backup feature
+2021-03-23 15:02:51.328 +01:00 [DBG] Hosting starting
+2021-03-23 15:02:51.426 +01:00 [INF] User profile is available. Using 'C:\Users\apenahig\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-03-23 15:02:51.635 +01:00 [DBG] Reading data from file 'C:\Users\apenahig\AppData\Local\ASP.NET\DataProtection-Keys\key-9d073722-32c1-4422-88d8-684df3278e92.xml'.
+2021-03-23 15:02:51.662 +01:00 [DBG] Found key {9d073722-32c1-4422-88d8-684df3278e92}.
+2021-03-23 15:02:51.677 +01:00 [DBG] Considering key {9d073722-32c1-4422-88d8-684df3278e92} with expiration date 2021-06-21 11:20:35Z as default key.
+2021-03-23 15:02:51.688 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.13.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2021-03-23 15:02:51.696 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2021-03-23 15:02:51.701 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.13.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2021-03-23 15:02:51.710 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2021-03-23 15:02:51.715 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2021-03-23 15:02:51.722 +01:00 [DBG] Using key {9d073722-32c1-4422-88d8-684df3278e92} as the default key.
+2021-03-23 15:02:51.725 +01:00 [DBG] Key ring with default key {9d073722-32c1-4422-88d8-684df3278e92} was loaded during application startup.
+2021-03-23 15:02:51.852 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+2021-03-23 15:02:51.919 +01:00 [DBG] Initializing Razor view compiler with no compiled views.
+2021-03-23 15:02:51.974 +01:00 [DBG] Failed to locate the development https certificate at 'null'.
+2021-03-23 15:02:51.981 +01:00 [WRN] Overriding address(es) 'https://localhost:8085'. Binding to endpoints defined in UseKestrel() instead.
+2021-03-23 15:02:52.023 +01:00 [INF] Now listening on: https://0.0.0.0:8085
+2021-03-23 15:02:52.024 +01:00 [DBG] Loaded hosting startup assembly Devon4Net.Application.WebAPI
+2021-03-23 15:02:52.026 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-03-23 15:02:52.027 +01:00 [INF] Hosting environment: Development
+2021-03-23 15:02:52.029 +01:00 [INF] Content root path: C:\Users\apenahig\Source\Repos\devon4net\source\Templates\WebAPI\Devon4Net.Application.WebAPI
+2021-03-23 15:02:52.032 +01:00 [DBG] Hosting started
+2021-03-23 15:02:52.492 +01:00 [DBG] Connection id "0HM7E0HCQUC1S" accepted.
+2021-03-23 15:02:52.496 +01:00 [DBG] Connection id "0HM7E0HCQUC1S" started.
+2021-03-23 15:02:52.596 +01:00 [DBG] Connection id "0HM7E0HCQUC1S" received FIN.
+2021-03-23 15:02:52.614 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Authentication failed because the remote party has closed the transport stream.
+   at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.PartialFrameCallback(AsyncProtocolRequest asyncRequest)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Security.SslStream.ThrowIfExceptional()
+   at System.Net.Security.SslStream.InternalEndProcessAuthentication(LazyAsyncResult lazyResult)
+   at System.Net.Security.SslStream.EndProcessAuthentication(IAsyncResult result)
+   at System.Net.Security.SslStream.EndAuthenticateAsServer(IAsyncResult asyncResult)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_1(IAsyncResult iar)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+2021-03-23 15:02:52.729 +01:00 [DBG] Connection id "0HM7E0HCQUC1S" stopped.
+2021-03-23 15:02:52.735 +01:00 [DBG] Connection id "0HM7E0HCQUC1S" sending FIN because: "The Socket transport's send loop completed gracefully."
+2021-03-23 15:02:57.947 +01:00 [DBG] Connection id "0HM7E0HCQUC1T" accepted.
+2021-03-23 15:02:57.950 +01:00 [DBG] Connection id "0HM7E0HCQUC1T" started.
+2021-03-23 15:02:58.226 +01:00 [DBG] Connection id "0HM7E0HCQUC1U" accepted.
+2021-03-23 15:02:58.258 +01:00 [DBG] Connection id "0HM7E0HCQUC1U" started.
+2021-03-23 15:02:58.353 +01:00 [DBG] Connection id "0HM7E0HCQUC1T" received FIN.
+2021-03-23 15:02:58.354 +01:00 [DBG] Connection id "0HM7E0HCQUC1U" received FIN.
+2021-03-23 15:02:58.439 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.StartSendAuthResetSignal(ProtocolToken message, AsyncProtocolRequest asyncRequest, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.CheckCompletionBeforeNextReceive(ProtocolToken message, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartSendBlob(Byte[] incoming, Int32 count, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ProcessReceivedBlob(Byte[] buffer, Int32 count, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.PartialFrameCallback(AsyncProtocolRequest asyncRequest)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Security.SslStream.ThrowIfExceptional()
+   at System.Net.Security.SslStream.InternalEndProcessAuthentication(LazyAsyncResult lazyResult)
+   at System.Net.Security.SslStream.EndProcessAuthentication(IAsyncResult result)
+   at System.Net.Security.SslStream.EndAuthenticateAsServer(IAsyncResult asyncResult)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_1(IAsyncResult iar)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+2021-03-23 15:02:58.439 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.StartSendAuthResetSignal(ProtocolToken message, AsyncProtocolRequest asyncRequest, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.CheckCompletionBeforeNextReceive(ProtocolToken message, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartSendBlob(Byte[] incoming, Int32 count, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ProcessReceivedBlob(Byte[] buffer, Int32 count, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.PartialFrameCallback(AsyncProtocolRequest asyncRequest)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Security.SslStream.ThrowIfExceptional()
+   at System.Net.Security.SslStream.InternalEndProcessAuthentication(LazyAsyncResult lazyResult)
+   at System.Net.Security.SslStream.EndProcessAuthentication(IAsyncResult result)
+   at System.Net.Security.SslStream.EndAuthenticateAsServer(IAsyncResult asyncResult)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_1(IAsyncResult iar)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+2021-03-23 15:02:58.638 +01:00 [DBG] Connection id "0HM7E0HCQUC1T" stopped.
+2021-03-23 15:02:58.687 +01:00 [DBG] Connection id "0HM7E0HCQUC1V" accepted.
+2021-03-23 15:02:58.742 +01:00 [DBG] Connection id "0HM7E0HCQUC1U" stopped.
+2021-03-23 15:02:58.746 +01:00 [DBG] Connection id "0HM7E0HCQUC1T" sending FIN because: "The Socket transport's send loop completed gracefully."
+2021-03-23 15:02:58.747 +01:00 [DBG] Connection id "0HM7E0HCQUC1V" started.
+2021-03-23 15:02:58.748 +01:00 [DBG] Connection id "0HM7E0HCQUC1U" sending FIN because: "The Socket transport's send loop completed gracefully."
+2021-03-23 15:02:58.917 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/index.html  
+2021-03-23 15:02:58.928 +01:00 [DBG] Connection id "0HM7E0HCQUC20" accepted.
+2021-03-23 15:02:58.928 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2021-03-23 15:02:58.929 +01:00 [DBG] Connection id "0HM7E0HCQUC20" started.
+2021-03-23 15:02:58.930 +01:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-03-23 15:02:58.954 +01:00 [DBG] The request path /swagger/index.html does not match an existing file
+2021-03-23 15:02:58.985 +01:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-03-23 15:02:59.218 +01:00 [INF] Request finished in 304.0006ms 200 text/html;charset=utf-8
+2021-03-23 15:02:59.290 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/swagger-ui-bundle.js  
+2021-03-23 15:02:59.290 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/swagger-ui-standalone-preset.js  
+2021-03-23 15:02:59.290 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/swagger-ui.css  
+2021-03-23 15:02:59.300 +01:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-03-23 15:02:59.304 +01:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-03-23 15:02:59.306 +01:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-03-23 15:02:59.308 +01:00 [DBG] The request path /swagger/swagger-ui-bundle.js does not match an existing file
+2021-03-23 15:02:59.309 +01:00 [DBG] The request path /swagger/swagger-ui-standalone-preset.js does not match an existing file
+2021-03-23 15:02:59.320 +01:00 [DBG] The request path /swagger/swagger-ui.css does not match an existing file
+2021-03-23 15:02:59.324 +01:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-03-23 15:02:59.330 +01:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-03-23 15:02:59.333 +01:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-03-23 15:02:59.491 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-03-23 15:02:59.517 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2021-03-23 15:02:59.590 +01:00 [INF] Request finished in 299.3483ms 200 text/css
+2021-03-23 15:02:59.594 +01:00 [INF] Request finished in 303.7602ms 200 application/javascript
+2021-03-23 15:02:59.641 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2021-03-23 15:02:59.647 +01:00 [INF] Request finished in 357.6395ms 200 application/javascript
+2021-03-23 15:03:00.067 +01:00 [INF] Request starting HTTP/2 GET https://localhost:8085/swagger/v1/swagger.json  
+2021-03-23 15:03:00.070 +01:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-03-23 15:03:00.082 +01:00 [DBG] The request path /swagger/v1/swagger.json does not match an existing file
+2021-03-23 15:03:00.104 +01:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-03-23 15:03:02.788 +01:00 [INF] Request finished in 2721.0193ms 200 application/json;charset=utf-8
+2021-03-23 15:03:03.323 +01:00 [DBG] Connection id "0HM7E0HCQUC20" received FIN.
+2021-03-23 15:03:03.323 +01:00 [DBG] Connection id "0HM7E0HCQUC1V" received FIN.
+2021-03-23 15:03:03.334 +01:00 [DBG] Connection id "0HM7E0HCQUC1V" is closed. The last processed stream ID was 9.
+2021-03-23 15:03:03.334 +01:00 [DBG] Connection id "0HM7E0HCQUC20" is closed. The last processed stream ID was 0.
+2021-03-23 15:03:03.336 +01:00 [DBG] Connection id "0HM7E0HCQUC1V" sending FIN because: "The client closed the connection."
+2021-03-23 15:03:03.342 +01:00 [DBG] Connection id "0HM7E0HCQUC20" sending FIN because: "The client closed the connection."
+2021-03-23 15:03:03.352 +01:00 [DBG] Connection id "0HM7E0HCQUC1V" stopped.
+2021-03-23 15:03:03.352 +01:00 [DBG] Connection id "0HM7E0HCQUC20" stopped.
+2021-03-23 15:05:24.818 +01:00 [DBG] Connection id "0HM7E0HCQUC21" accepted.
+2021-03-23 15:05:24.835 +01:00 [DBG] Connection id "0HM7E0HCQUC21" started.
+2021-03-23 15:05:24.847 +01:00 [DBG] Connection id "0HM7E0HCQUC21" received FIN.
+2021-03-23 15:05:24.848 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.StartSendAuthResetSignal(ProtocolToken message, AsyncProtocolRequest asyncRequest, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.CheckCompletionBeforeNextReceive(ProtocolToken message, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartSendBlob(Byte[] incoming, Int32 count, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ProcessReceivedBlob(Byte[] buffer, Int32 count, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.PartialFrameCallback(AsyncProtocolRequest asyncRequest)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Security.SslStream.ThrowIfExceptional()
+   at System.Net.Security.SslStream.InternalEndProcessAuthentication(LazyAsyncResult lazyResult)
+   at System.Net.Security.SslStream.EndProcessAuthentication(IAsyncResult result)
+   at System.Net.Security.SslStream.EndAuthenticateAsServer(IAsyncResult asyncResult)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_1(IAsyncResult iar)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+2021-03-23 15:05:24.872 +01:00 [DBG] Connection id "0HM7E0HCQUC21" stopped.
+2021-03-23 15:05:24.880 +01:00 [DBG] Connection id "0HM7E0HCQUC21" sending FIN because: "The Socket transport's send loop completed gracefully."
+2021-03-23 15:05:25.063 +01:00 [DBG] Connection id "0HM7E0HCQUC22" accepted.
+2021-03-23 15:05:25.070 +01:00 [DBG] Connection id "0HM7E0HCQUC22" started.
+2021-03-23 15:05:25.075 +01:00 [DBG] Connection id "0HM7E0HCQUC22" received FIN.
+2021-03-23 15:05:25.077 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.StartSendAuthResetSignal(ProtocolToken message, AsyncProtocolRequest asyncRequest, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.CheckCompletionBeforeNextReceive(ProtocolToken message, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartSendBlob(Byte[] incoming, Int32 count, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.ProcessReceivedBlob(Byte[] buffer, Int32 count, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+   at System.Net.Security.SslStream.PartialFrameCallback(AsyncProtocolRequest asyncRequest)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Net.Security.SslStream.ThrowIfExceptional()
+   at System.Net.Security.SslStream.InternalEndProcessAuthentication(LazyAsyncResult lazyResult)
+   at System.Net.Security.SslStream.EndProcessAuthentication(IAsyncResult result)
+   at System.Net.Security.SslStream.EndAuthenticateAsServer(IAsyncResult asyncResult)
+   at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_1(IAsyncResult iar)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+2021-03-23 15:05:25.112 +01:00 [DBG] Connection id "0HM7E0HCQUC22" stopped.
+2021-03-23 15:05:25.115 +01:00 [DBG] Connection id "0HM7E0HCQUC22" sending FIN because: "The Socket transport's send loop completed gracefully."
+2021-03-23 15:05:25.157 +01:00 [DBG] Connection id "0HM7E0HCQUC23" accepted.
+2021-03-23 15:05:25.160 +01:00 [DBG] Connection id "0HM7E0HCQUC23" started.
+2021-03-23 15:05:25.170 +01:00 [INF] Request starting HTTP/2 POST https://localhost:8085/Employee application/json 59
+2021-03-23 15:05:25.174 +01:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-03-23 15:05:25.181 +01:00 [DBG] POST requests are not supported
+2021-03-23 15:05:25.182 +01:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-03-23 15:05:25.183 +01:00 [DBG] POST requests are not supported
+2021-03-23 15:05:25.197 +01:00 [DBG] No candidates found for the request path '/Employee'
+2021-03-23 15:05:25.200 +01:00 [DBG] Request did not match any endpoints
+2021-03-23 15:05:25.292 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-03-23 15:05:25.330 +01:00 [DBG] Request successfully matched the route with name 'null' and template 'Employee'
+2021-03-23 15:05:25.344 +01:00 [DBG] Action 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.GetEmployee (Devon4Net.WebAPI.Implementation)' with id '9d6fb5a7-a38f-4862-9cf7-f2d8bf67478b' did not match the constraint 'Microsoft.AspNetCore.Mvc.Cors.CorsHttpMethodActionConstraint'
+2021-03-23 15:05:25.351 +01:00 [DBG] Action 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.Delete (Devon4Net.WebAPI.Implementation)' with id '6b792f76-ac8f-431b-9500-476abc9372a3' did not match the constraint 'Microsoft.AspNetCore.Mvc.Cors.CorsHttpMethodActionConstraint'
+2021-03-23 15:05:25.353 +01:00 [DBG] Action 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.ModifyEmployee (Devon4Net.WebAPI.Implementation)' with id '27fe92cb-71da-4acb-9b29-813af5fa7f83' did not match the constraint 'Microsoft.AspNetCore.Mvc.Cors.CorsHttpMethodActionConstraint'
+2021-03-23 15:05:25.393 +01:00 [DBG] Connection id "0HM7E0HCQUC24" accepted.
+2021-03-23 15:05:25.395 +01:00 [DBG] Connection id "0HM7E0HCQUC24" started.
+2021-03-23 15:05:25.399 +01:00 [INF] Route matched with {action = "Create", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Create(Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Dto.EmployeeDto) on controller Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController (Devon4Net.WebAPI.Implementation).
+2021-03-23 15:05:25.404 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter (Order: -2147483548)"]
+2021-03-23 15:05:25.410 +01:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2021-03-23 15:05:25.414 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2021-03-23 15:05:25.417 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2021-03-23 15:05:25.419 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2021-03-23 15:05:25.429 +01:00 [DBG] The request has an origin header: 'https://localhost:8085'.
+2021-03-23 15:05:25.431 +01:00 [INF] CORS policy execution successful.
+2021-03-23 15:05:25.446 +01:00 [DBG] Executing controller factory for controller Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController (Devon4Net.WebAPI.Implementation)
+2021-03-23 15:05:25.586 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2021-03-23 15:05:25.610 +01:00 [DBG] Executed controller factory for controller Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController (Devon4Net.WebAPI.Implementation)
+2021-03-23 15:05:25.632 +01:00 [DBG] Attempting to bind parameter 'employeeDto' of type 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Dto.EmployeeDto' ...
+2021-03-23 15:05:25.638 +01:00 [DBG] Attempting to bind parameter 'employeeDto' of type 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Dto.EmployeeDto' using the name '' in request data ...
+2021-03-23 15:05:25.643 +01:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2021-03-23 15:05:25.658 +01:00 [DBG] Connection id "0HM7E0HCQUC23", Request id "0HM7E0HCQUC23:00000001": started reading request body.
+2021-03-23 15:05:25.662 +01:00 [DBG] Connection id "0HM7E0HCQUC23", Request id "0HM7E0HCQUC23:00000001": done reading request body.
+2021-03-23 15:05:25.667 +01:00 [DBG] JSON input formatter succeeded, deserializing to type 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Dto.EmployeeDto'
+2021-03-23 15:05:25.669 +01:00 [DBG] Done attempting to bind parameter 'employeeDto' of type 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Dto.EmployeeDto'.
+2021-03-23 15:05:25.677 +01:00 [DBG] Done attempting to bind parameter 'employeeDto' of type 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Dto.EmployeeDto'.
+2021-03-23 15:05:25.682 +01:00 [DBG] Attempting to validate the bound parameter 'employeeDto' of type 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Dto.EmployeeDto' ...
+2021-03-23 15:05:25.698 +01:00 [DBG] Done attempting to validate the bound parameter 'employeeDto' of type 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Dto.EmployeeDto'.
+2021-03-23 15:05:25.708 +01:00 [DBG] Executing GetEmployee from controller EmployeeController
+2021-03-23 15:05:25.712 +01:00 [DBG] SetEmployee method from service Employeeervice with value : string, string, string
+2021-03-23 15:05:25.714 +01:00 [DBG] SetTodo method from repository Employeeervice with value : string
+2021-03-23 15:05:26.100 +01:00 [INF] Entity Framework Core 3.1.10 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=Employee 
+2021-03-23 15:05:26.167 +01:00 [DBG] 'EmployeeContext' generated a value for the 'Id' property of new 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2021-03-23 15:05:26.214 +01:00 [DBG] Context 'EmployeeContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2021-03-23 15:05:26.218 +01:00 [DBG] SaveChanges starting for 'EmployeeContext'.
+2021-03-23 15:05:26.223 +01:00 [DBG] DetectChanges starting for 'EmployeeContext'.
+2021-03-23 15:05:26.234 +01:00 [DBG] DetectChanges completed for 'EmployeeContext'.
+2021-03-23 15:05:26.254 +01:00 [INF] Saved 1 entities to in-memory store.
+2021-03-23 15:05:26.266 +01:00 [DBG] An 'Employee' entity tracked by 'EmployeeContext' changed from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2021-03-23 15:05:26.269 +01:00 [DBG] SaveChanges completed for 'EmployeeContext' with 1 entities written to the database.
+2021-03-23 15:05:26.278 +01:00 [DBG] An 'Employee' entity tracked by 'EmployeeContext' changed from '"Unchanged"' to '"Detached"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2021-03-23 15:05:26.285 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2021-03-23 15:05:26.293 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2021-03-23 15:05:26.296 +01:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2021-03-23 15:05:26.297 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2021-03-23 15:05:26.301 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2021-03-23 15:05:26.302 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2021-03-23 15:05:26.304 +01:00 [INF] Executing ObjectResult, writing value of type 'Devon4Net.WebAPI.Implementation.Domain.Entities.Employee'.
+2021-03-23 15:05:26.316 +01:00 [INF] Executed action Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.Create (Devon4Net.WebAPI.Implementation) in 887.6734ms
+2021-03-23 15:05:26.323 +01:00 [DBG] 'EmployeeContext' disposed.
+2021-03-23 15:05:26.329 +01:00 [INF] Request finished in 1158.5704ms 201 application/json; charset=utf-8
+2021-03-23 15:05:56.565 +01:00 [INF] Request starting HTTP/2 POST https://localhost:8085/Employee application/json 62
+2021-03-23 15:05:56.567 +01:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-03-23 15:05:56.569 +01:00 [DBG] POST requests are not supported
+2021-03-23 15:05:56.570 +01:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-03-23 15:05:56.572 +01:00 [DBG] POST requests are not supported
+2021-03-23 15:05:56.573 +01:00 [DBG] No candidates found for the request path '/Employee'
+2021-03-23 15:05:56.575 +01:00 [DBG] Request did not match any endpoints
+2021-03-23 15:05:56.576 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-03-23 15:05:56.577 +01:00 [DBG] Request successfully matched the route with name 'null' and template 'Employee'
+2021-03-23 15:05:56.579 +01:00 [DBG] Action 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.GetEmployee (Devon4Net.WebAPI.Implementation)' with id '9d6fb5a7-a38f-4862-9cf7-f2d8bf67478b' did not match the constraint 'Microsoft.AspNetCore.Mvc.Cors.CorsHttpMethodActionConstraint'
+2021-03-23 15:05:56.588 +01:00 [DBG] Action 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.Delete (Devon4Net.WebAPI.Implementation)' with id '6b792f76-ac8f-431b-9500-476abc9372a3' did not match the constraint 'Microsoft.AspNetCore.Mvc.Cors.CorsHttpMethodActionConstraint'
+2021-03-23 15:05:56.590 +01:00 [DBG] Action 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.ModifyEmployee (Devon4Net.WebAPI.Implementation)' with id '27fe92cb-71da-4acb-9b29-813af5fa7f83' did not match the constraint 'Microsoft.AspNetCore.Mvc.Cors.CorsHttpMethodActionConstraint'
+2021-03-23 15:05:56.592 +01:00 [INF] Route matched with {action = "Create", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Create(Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Dto.EmployeeDto) on controller Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController (Devon4Net.WebAPI.Implementation).
+2021-03-23 15:05:56.595 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter (Order: -2147483548)"]
+2021-03-23 15:05:56.621 +01:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2021-03-23 15:05:56.633 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2021-03-23 15:05:56.642 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2021-03-23 15:05:56.647 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2021-03-23 15:05:56.654 +01:00 [DBG] The request has an origin header: 'https://localhost:8085'.
+2021-03-23 15:05:56.656 +01:00 [INF] CORS policy execution successful.
+2021-03-23 15:05:56.657 +01:00 [DBG] Executing controller factory for controller Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController (Devon4Net.WebAPI.Implementation)
+2021-03-23 15:05:56.662 +01:00 [DBG] Executed controller factory for controller Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController (Devon4Net.WebAPI.Implementation)
+2021-03-23 15:05:56.666 +01:00 [DBG] Attempting to bind parameter 'employeeDto' of type 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Dto.EmployeeDto' ...
+2021-03-23 15:05:56.668 +01:00 [DBG] Attempting to bind parameter 'employeeDto' of type 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Dto.EmployeeDto' using the name '' in request data ...
+2021-03-23 15:05:56.670 +01:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2021-03-23 15:05:56.672 +01:00 [DBG] Connection id "0HM7E0HCQUC23", Request id "0HM7E0HCQUC23:00000003": started reading request body.
+2021-03-23 15:05:56.673 +01:00 [DBG] Connection id "0HM7E0HCQUC23", Request id "0HM7E0HCQUC23:00000003": done reading request body.
+2021-03-23 15:05:56.674 +01:00 [DBG] JSON input formatter succeeded, deserializing to type 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Dto.EmployeeDto'
+2021-03-23 15:05:56.679 +01:00 [DBG] Done attempting to bind parameter 'employeeDto' of type 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Dto.EmployeeDto'.
+2021-03-23 15:05:56.689 +01:00 [DBG] Done attempting to bind parameter 'employeeDto' of type 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Dto.EmployeeDto'.
+2021-03-23 15:05:56.697 +01:00 [DBG] Attempting to validate the bound parameter 'employeeDto' of type 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Dto.EmployeeDto' ...
+2021-03-23 15:05:56.704 +01:00 [DBG] Done attempting to validate the bound parameter 'employeeDto' of type 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Dto.EmployeeDto'.
+2021-03-23 15:05:56.708 +01:00 [DBG] Executing GetEmployee from controller EmployeeController
+2021-03-23 15:05:56.713 +01:00 [DBG] SetEmployee method from service Employeeervice with value : string, string, string
+2021-03-23 15:05:56.726 +01:00 [DBG] SetTodo method from repository Employeeervice with value : string
+2021-03-23 15:05:56.774 +01:00 [INF] Entity Framework Core 3.1.10 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=Employee 
+2021-03-23 15:05:56.776 +01:00 [DBG] 'EmployeeContext' generated a value for the 'Id' property of new 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2021-03-23 15:05:56.777 +01:00 [DBG] Context 'EmployeeContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2021-03-23 15:05:56.778 +01:00 [DBG] SaveChanges starting for 'EmployeeContext'.
+2021-03-23 15:05:56.779 +01:00 [DBG] DetectChanges starting for 'EmployeeContext'.
+2021-03-23 15:05:56.780 +01:00 [DBG] DetectChanges completed for 'EmployeeContext'.
+2021-03-23 15:05:56.780 +01:00 [INF] Saved 1 entities to in-memory store.
+2021-03-23 15:05:56.781 +01:00 [DBG] An 'Employee' entity tracked by 'EmployeeContext' changed from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2021-03-23 15:05:56.784 +01:00 [DBG] SaveChanges completed for 'EmployeeContext' with 1 entities written to the database.
+2021-03-23 15:05:56.786 +01:00 [DBG] An 'Employee' entity tracked by 'EmployeeContext' changed from '"Unchanged"' to '"Detached"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2021-03-23 15:05:56.788 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2021-03-23 15:05:56.791 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2021-03-23 15:05:56.792 +01:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2021-03-23 15:05:56.793 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2021-03-23 15:05:56.794 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2021-03-23 15:05:56.795 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2021-03-23 15:05:56.796 +01:00 [INF] Executing ObjectResult, writing value of type 'Devon4Net.WebAPI.Implementation.Domain.Entities.Employee'.
+2021-03-23 15:05:56.797 +01:00 [INF] Executed action Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.Create (Devon4Net.WebAPI.Implementation) in 143.6314ms
+2021-03-23 15:05:56.806 +01:00 [DBG] 'EmployeeContext' disposed.
+2021-03-23 15:05:56.807 +01:00 [INF] Request finished in 242.4411ms 201 application/json; charset=utf-8
+2021-03-23 15:06:35.308 +01:00 [DBG] Connection id "0HM7E0HCQUC24" received FIN.
+2021-03-23 15:06:35.310 +01:00 [DBG] Connection id "0HM7E0HCQUC24" is closed. The last processed stream ID was 0.
+2021-03-23 15:06:35.313 +01:00 [DBG] Connection id "0HM7E0HCQUC24" sending FIN because: "The client closed the connection."
+2021-03-23 15:06:35.316 +01:00 [DBG] Connection id "0HM7E0HCQUC24" stopped.
+2021-03-23 15:06:44.928 +01:00 [INF] Request starting HTTP/2 DELETE https://localhost:8085/Employee?employeeId=0  
+2021-03-23 15:06:44.929 +01:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-03-23 15:06:44.930 +01:00 [DBG] DELETE requests are not supported
+2021-03-23 15:06:44.932 +01:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-03-23 15:06:44.933 +01:00 [DBG] DELETE requests are not supported
+2021-03-23 15:06:44.934 +01:00 [DBG] No candidates found for the request path '/Employee'
+2021-03-23 15:06:44.935 +01:00 [DBG] Request did not match any endpoints
+2021-03-23 15:06:44.937 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-03-23 15:06:44.938 +01:00 [DBG] Request successfully matched the route with name 'null' and template 'Employee'
+2021-03-23 15:06:44.941 +01:00 [DBG] Action 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.GetEmployee (Devon4Net.WebAPI.Implementation)' with id '9d6fb5a7-a38f-4862-9cf7-f2d8bf67478b' did not match the constraint 'Microsoft.AspNetCore.Mvc.Cors.CorsHttpMethodActionConstraint'
+2021-03-23 15:06:44.950 +01:00 [DBG] Action 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.Create (Devon4Net.WebAPI.Implementation)' with id '51c21c80-5c33-4384-bdd4-b72d1b4491e8' did not match the constraint 'Microsoft.AspNetCore.Mvc.Cors.CorsHttpMethodActionConstraint'
+2021-03-23 15:06:44.962 +01:00 [DBG] Action 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.ModifyEmployee (Devon4Net.WebAPI.Implementation)' with id '27fe92cb-71da-4acb-9b29-813af5fa7f83' did not match the constraint 'Microsoft.AspNetCore.Mvc.Cors.CorsHttpMethodActionConstraint'
+2021-03-23 15:06:44.983 +01:00 [INF] Route matched with {action = "Delete", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Delete(Int64) on controller Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController (Devon4Net.WebAPI.Implementation).
+2021-03-23 15:06:44.996 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter (Order: -2147483548)"]
+2021-03-23 15:06:45.007 +01:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2021-03-23 15:06:45.015 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2021-03-23 15:06:45.018 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2021-03-23 15:06:45.028 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2021-03-23 15:06:45.031 +01:00 [DBG] The request has an origin header: 'https://localhost:8085'.
+2021-03-23 15:06:45.034 +01:00 [INF] CORS policy execution successful.
+2021-03-23 15:06:45.035 +01:00 [DBG] Executing controller factory for controller Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController (Devon4Net.WebAPI.Implementation)
+2021-03-23 15:06:45.041 +01:00 [DBG] Executed controller factory for controller Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController (Devon4Net.WebAPI.Implementation)
+2021-03-23 15:06:45.043 +01:00 [DBG] Attempting to bind parameter 'employeeId' of type 'System.Int64' ...
+2021-03-23 15:06:45.048 +01:00 [DBG] Attempting to bind parameter 'employeeId' of type 'System.Int64' using the name 'employeeId' in request data ...
+2021-03-23 15:06:45.051 +01:00 [DBG] Done attempting to bind parameter 'employeeId' of type 'System.Int64'.
+2021-03-23 15:06:45.052 +01:00 [DBG] Done attempting to bind parameter 'employeeId' of type 'System.Int64'.
+2021-03-23 15:06:45.056 +01:00 [DBG] Attempting to validate the bound parameter 'employeeId' of type 'System.Int64' ...
+2021-03-23 15:06:45.057 +01:00 [DBG] Done attempting to validate the bound parameter 'employeeId' of type 'System.Int64'.
+2021-03-23 15:06:45.059 +01:00 [DBG] Executing GetEmployee from controller EmployeeController
+2021-03-23 15:06:45.062 +01:00 [DBG] DeleteEmployeeById method from service Employeeervice with value : 0
+2021-03-23 15:06:45.088 +01:00 [INF] Entity Framework Core 3.1.10 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=Employee 
+2021-03-23 15:06:45.267 +01:00 [DBG] queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Employee>(
+    asyncEnumerable: new QueryingEnumerable<Employee>(
+        queryContext, 
+        new ResultEnumerable(() => InMemoryShapedQueryCompilingExpressionVisitor.Table(
+            queryContext: queryContext, 
+            entityType: EntityType: Employee)
+            .Where(valueBuffer => EntityMaterializerSource.TryReadValue<long>(valueBuffer, 0, Property: Employee.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd) == InMemoryExpressionTranslatingExpressionVisitor.GetParameterValue<long>(
+                queryContext: queryContext, 
+                parameterName: "__id_0"))
+            .FirstOrDefault())
+            .Select(valueBuffer => new ValueBuffer(new object[]
+            { 
+                (object)EntityMaterializerSource.TryReadValue<long>(valueBuffer, 0, Property: Employee.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd), 
+                EntityMaterializerSource.TryReadValue<string>(valueBuffer, 1, Property: Employee.Mail (string) Required MaxLength255), 
+                EntityMaterializerSource.TryReadValue<string>(valueBuffer, 2, Property: Employee.Name (string) Required MaxLength255), 
+                EntityMaterializerSource.TryReadValue<string>(valueBuffer, 3, Property: Employee.Surname (string) Required MaxLength255) 
+            })), 
+        Func<QueryContext, ValueBuffer, Employee>, 
+        Devon4Net.WebAPI.Implementation.Domain.Database.EmployeeContext, 
+        null
+    ), 
+    cancellationToken: queryContext.CancellationToken)
+2021-03-23 15:06:45.443 +01:00 [INF] Executed action Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.Delete (Devon4Net.WebAPI.Implementation) in 411.3201ms
+2021-03-23 15:06:45.510 +01:00 [ERR] Exception Type: ArgumentException | Message: The provided Id 0 does not exists | InnerException: No InnerException exception data found
+2021-03-23 15:06:45.521 +01:00 [DBG] 'EmployeeContext' disposed.
+2021-03-23 15:06:45.523 +01:00 [INF] Request finished in 594.899ms 400 
+2021-03-23 15:07:04.071 +01:00 [INF] Request starting HTTP/2 DELETE https://localhost:8085/Employee?employeeId=1098  
+2021-03-23 15:07:04.072 +01:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-03-23 15:07:04.076 +01:00 [DBG] DELETE requests are not supported
+2021-03-23 15:07:04.079 +01:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-03-23 15:07:04.081 +01:00 [DBG] DELETE requests are not supported
+2021-03-23 15:07:04.081 +01:00 [DBG] No candidates found for the request path '/Employee'
+2021-03-23 15:07:04.082 +01:00 [DBG] Request did not match any endpoints
+2021-03-23 15:07:04.083 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-03-23 15:07:04.084 +01:00 [DBG] Request successfully matched the route with name 'null' and template 'Employee'
+2021-03-23 15:07:04.085 +01:00 [DBG] Action 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.GetEmployee (Devon4Net.WebAPI.Implementation)' with id '9d6fb5a7-a38f-4862-9cf7-f2d8bf67478b' did not match the constraint 'Microsoft.AspNetCore.Mvc.Cors.CorsHttpMethodActionConstraint'
+2021-03-23 15:07:04.087 +01:00 [DBG] Action 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.Create (Devon4Net.WebAPI.Implementation)' with id '51c21c80-5c33-4384-bdd4-b72d1b4491e8' did not match the constraint 'Microsoft.AspNetCore.Mvc.Cors.CorsHttpMethodActionConstraint'
+2021-03-23 15:07:04.089 +01:00 [DBG] Action 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.ModifyEmployee (Devon4Net.WebAPI.Implementation)' with id '27fe92cb-71da-4acb-9b29-813af5fa7f83' did not match the constraint 'Microsoft.AspNetCore.Mvc.Cors.CorsHttpMethodActionConstraint'
+2021-03-23 15:07:04.092 +01:00 [INF] Route matched with {action = "Delete", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Delete(Int64) on controller Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController (Devon4Net.WebAPI.Implementation).
+2021-03-23 15:07:04.100 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter (Order: -2147483548)"]
+2021-03-23 15:07:04.102 +01:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2021-03-23 15:07:04.105 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2021-03-23 15:07:04.127 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2021-03-23 15:07:04.130 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2021-03-23 15:07:04.137 +01:00 [DBG] The request has an origin header: 'https://localhost:8085'.
+2021-03-23 15:07:04.138 +01:00 [INF] CORS policy execution successful.
+2021-03-23 15:07:04.140 +01:00 [DBG] Executing controller factory for controller Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController (Devon4Net.WebAPI.Implementation)
+2021-03-23 15:07:04.151 +01:00 [DBG] Executed controller factory for controller Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController (Devon4Net.WebAPI.Implementation)
+2021-03-23 15:07:04.152 +01:00 [DBG] Attempting to bind parameter 'employeeId' of type 'System.Int64' ...
+2021-03-23 15:07:04.153 +01:00 [DBG] Attempting to bind parameter 'employeeId' of type 'System.Int64' using the name 'employeeId' in request data ...
+2021-03-23 15:07:04.155 +01:00 [DBG] Done attempting to bind parameter 'employeeId' of type 'System.Int64'.
+2021-03-23 15:07:04.158 +01:00 [DBG] Done attempting to bind parameter 'employeeId' of type 'System.Int64'.
+2021-03-23 15:07:04.160 +01:00 [DBG] Attempting to validate the bound parameter 'employeeId' of type 'System.Int64' ...
+2021-03-23 15:07:04.171 +01:00 [DBG] Done attempting to validate the bound parameter 'employeeId' of type 'System.Int64'.
+2021-03-23 15:07:04.178 +01:00 [DBG] Executing GetEmployee from controller EmployeeController
+2021-03-23 15:07:04.181 +01:00 [DBG] DeleteEmployeeById method from service Employeeervice with value : 1098
+2021-03-23 15:07:04.182 +01:00 [INF] Entity Framework Core 3.1.10 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=Employee 
+2021-03-23 15:07:04.257 +01:00 [INF] Executed action Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.Delete (Devon4Net.WebAPI.Implementation) in 119.7735ms
+2021-03-23 15:07:04.319 +01:00 [ERR] Exception Type: ArgumentException | Message: The provided Id 1098 does not exists | InnerException: No InnerException exception data found
+2021-03-23 15:07:04.326 +01:00 [DBG] 'EmployeeContext' disposed.
+2021-03-23 15:07:04.328 +01:00 [INF] Request finished in 257.567ms 400 
+2021-03-23 15:07:09.852 +01:00 [INF] Request starting HTTP/2 DELETE https://localhost:8085/Employee?employeeId=1  
+2021-03-23 15:07:09.853 +01:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-03-23 15:07:09.854 +01:00 [DBG] DELETE requests are not supported
+2021-03-23 15:07:09.856 +01:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-03-23 15:07:09.858 +01:00 [DBG] DELETE requests are not supported
+2021-03-23 15:07:09.860 +01:00 [DBG] No candidates found for the request path '/Employee'
+2021-03-23 15:07:09.861 +01:00 [DBG] Request did not match any endpoints
+2021-03-23 15:07:09.864 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-03-23 15:07:09.867 +01:00 [DBG] Request successfully matched the route with name 'null' and template 'Employee'
+2021-03-23 15:07:09.869 +01:00 [DBG] Action 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.GetEmployee (Devon4Net.WebAPI.Implementation)' with id '9d6fb5a7-a38f-4862-9cf7-f2d8bf67478b' did not match the constraint 'Microsoft.AspNetCore.Mvc.Cors.CorsHttpMethodActionConstraint'
+2021-03-23 15:07:09.876 +01:00 [DBG] Action 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.Create (Devon4Net.WebAPI.Implementation)' with id '51c21c80-5c33-4384-bdd4-b72d1b4491e8' did not match the constraint 'Microsoft.AspNetCore.Mvc.Cors.CorsHttpMethodActionConstraint'
+2021-03-23 15:07:09.879 +01:00 [DBG] Action 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.ModifyEmployee (Devon4Net.WebAPI.Implementation)' with id '27fe92cb-71da-4acb-9b29-813af5fa7f83' did not match the constraint 'Microsoft.AspNetCore.Mvc.Cors.CorsHttpMethodActionConstraint'
+2021-03-23 15:07:09.889 +01:00 [INF] Route matched with {action = "Delete", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Delete(Int64) on controller Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController (Devon4Net.WebAPI.Implementation).
+2021-03-23 15:07:09.901 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter (Order: -2147483548)"]
+2021-03-23 15:07:09.906 +01:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2021-03-23 15:07:09.913 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2021-03-23 15:07:09.925 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2021-03-23 15:07:09.931 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2021-03-23 15:07:09.936 +01:00 [DBG] The request has an origin header: 'https://localhost:8085'.
+2021-03-23 15:07:09.937 +01:00 [INF] CORS policy execution successful.
+2021-03-23 15:07:09.938 +01:00 [DBG] Executing controller factory for controller Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController (Devon4Net.WebAPI.Implementation)
+2021-03-23 15:07:09.939 +01:00 [DBG] Executed controller factory for controller Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController (Devon4Net.WebAPI.Implementation)
+2021-03-23 15:07:09.947 +01:00 [DBG] Attempting to bind parameter 'employeeId' of type 'System.Int64' ...
+2021-03-23 15:07:09.948 +01:00 [DBG] Attempting to bind parameter 'employeeId' of type 'System.Int64' using the name 'employeeId' in request data ...
+2021-03-23 15:07:09.952 +01:00 [DBG] Done attempting to bind parameter 'employeeId' of type 'System.Int64'.
+2021-03-23 15:07:09.952 +01:00 [DBG] Done attempting to bind parameter 'employeeId' of type 'System.Int64'.
+2021-03-23 15:07:09.953 +01:00 [DBG] Attempting to validate the bound parameter 'employeeId' of type 'System.Int64' ...
+2021-03-23 15:07:09.955 +01:00 [DBG] Done attempting to validate the bound parameter 'employeeId' of type 'System.Int64'.
+2021-03-23 15:07:09.956 +01:00 [DBG] Executing GetEmployee from controller EmployeeController
+2021-03-23 15:07:09.965 +01:00 [DBG] DeleteEmployeeById method from service Employeeervice with value : 1
+2021-03-23 15:07:09.967 +01:00 [INF] Entity Framework Core 3.1.10 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=Employee 
+2021-03-23 15:07:09.970 +01:00 [DBG] DeleteTodoById method from repository Employeeervice with value : 1
+2021-03-23 15:07:10.016 +01:00 [DBG] queryContext => new QueryingEnumerable<Employee>(
+    queryContext, 
+    InMemoryShapedQueryCompilingExpressionVisitor.Table(
+        queryContext: queryContext, 
+        entityType: EntityType: Employee)
+        .Where(valueBuffer => EntityMaterializerSource.TryReadValue<long>(valueBuffer, 0, Property: Employee.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd) == InMemoryExpressionTranslatingExpressionVisitor.GetParameterValue<long>(
+            queryContext: queryContext, 
+            parameterName: "__id_0"))
+        .Select(valueBuffer => new ValueBuffer(new object[]
+        { 
+            (object)EntityMaterializerSource.TryReadValue<long>(valueBuffer, 0, Property: Employee.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd), 
+            EntityMaterializerSource.TryReadValue<string>(valueBuffer, 1, Property: Employee.Mail (string) Required MaxLength255), 
+            EntityMaterializerSource.TryReadValue<string>(valueBuffer, 2, Property: Employee.Name (string) Required MaxLength255), 
+            EntityMaterializerSource.TryReadValue<string>(valueBuffer, 3, Property: Employee.Surname (string) Required MaxLength255) 
+        })), 
+    Func<QueryContext, ValueBuffer, Employee>, 
+    Devon4Net.WebAPI.Implementation.Domain.Database.EmployeeContext, 
+    null
+)
+2021-03-23 15:07:10.031 +01:00 [DBG] Context 'EmployeeContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2021-03-23 15:07:10.032 +01:00 [DBG] An 'Employee' entity tracked by 'EmployeeContext' changed from '"Unchanged"' to '"Deleted"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2021-03-23 15:07:10.033 +01:00 [DBG] SaveChanges starting for 'EmployeeContext'.
+2021-03-23 15:07:10.043 +01:00 [INF] Saved 1 entities to in-memory store.
+2021-03-23 15:07:10.047 +01:00 [DBG] An 'Employee' entity tracked by 'EmployeeContext' changed from '"Deleted"' to '"Detached"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2021-03-23 15:07:10.050 +01:00 [DBG] SaveChanges completed for 'EmployeeContext' with 1 entities written to the database.
+2021-03-23 15:07:10.058 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2021-03-23 15:07:10.064 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2021-03-23 15:07:10.065 +01:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2021-03-23 15:07:10.066 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2021-03-23 15:07:10.069 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2021-03-23 15:07:10.073 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2021-03-23 15:07:10.076 +01:00 [INF] Executing ObjectResult, writing value of type 'System.Int64'.
+2021-03-23 15:07:10.079 +01:00 [INF] Executed action Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.Delete (Devon4Net.WebAPI.Implementation) in 142.995ms
+2021-03-23 15:07:10.084 +01:00 [DBG] 'EmployeeContext' disposed.
+2021-03-23 15:07:10.086 +01:00 [INF] Request finished in 234.7408ms 200 application/json; charset=utf-8
+2021-03-23 15:07:22.773 +01:00 [INF] Request starting HTTP/2 DELETE https://localhost:8085/Employee?employeeId=2  
+2021-03-23 15:07:22.774 +01:00 [DBG] The host 'localhost' is excluded. Skipping HSTS header.
+2021-03-23 15:07:22.776 +01:00 [DBG] DELETE requests are not supported
+2021-03-23 15:07:22.778 +01:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-03-23 15:07:22.781 +01:00 [DBG] DELETE requests are not supported
+2021-03-23 15:07:22.781 +01:00 [DBG] No candidates found for the request path '/Employee'
+2021-03-23 15:07:22.782 +01:00 [DBG] Request did not match any endpoints
+2021-03-23 15:07:22.783 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-03-23 15:07:22.784 +01:00 [DBG] Request successfully matched the route with name 'null' and template 'Employee'
+2021-03-23 15:07:22.785 +01:00 [DBG] Action 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.GetEmployee (Devon4Net.WebAPI.Implementation)' with id '9d6fb5a7-a38f-4862-9cf7-f2d8bf67478b' did not match the constraint 'Microsoft.AspNetCore.Mvc.Cors.CorsHttpMethodActionConstraint'
+2021-03-23 15:07:22.794 +01:00 [DBG] Action 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.Create (Devon4Net.WebAPI.Implementation)' with id '51c21c80-5c33-4384-bdd4-b72d1b4491e8' did not match the constraint 'Microsoft.AspNetCore.Mvc.Cors.CorsHttpMethodActionConstraint'
+2021-03-23 15:07:22.797 +01:00 [DBG] Action 'Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.ModifyEmployee (Devon4Net.WebAPI.Implementation)' with id '27fe92cb-71da-4acb-9b29-813af5fa7f83' did not match the constraint 'Microsoft.AspNetCore.Mvc.Cors.CorsHttpMethodActionConstraint'
+2021-03-23 15:07:22.799 +01:00 [INF] Route matched with {action = "Delete", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Delete(Int64) on controller Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController (Devon4Net.WebAPI.Implementation).
+2021-03-23 15:07:22.822 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter (Order: -2147483548)"]
+2021-03-23 15:07:22.847 +01:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2021-03-23 15:07:22.854 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2021-03-23 15:07:22.870 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2021-03-23 15:07:22.872 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2021-03-23 15:07:22.876 +01:00 [DBG] The request has an origin header: 'https://localhost:8085'.
+2021-03-23 15:07:22.877 +01:00 [INF] CORS policy execution successful.
+2021-03-23 15:07:22.878 +01:00 [DBG] Executing controller factory for controller Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController (Devon4Net.WebAPI.Implementation)
+2021-03-23 15:07:22.883 +01:00 [DBG] Executed controller factory for controller Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController (Devon4Net.WebAPI.Implementation)
+2021-03-23 15:07:22.887 +01:00 [DBG] Attempting to bind parameter 'employeeId' of type 'System.Int64' ...
+2021-03-23 15:07:22.889 +01:00 [DBG] Attempting to bind parameter 'employeeId' of type 'System.Int64' using the name 'employeeId' in request data ...
+2021-03-23 15:07:22.892 +01:00 [DBG] Done attempting to bind parameter 'employeeId' of type 'System.Int64'.
+2021-03-23 15:07:22.893 +01:00 [DBG] Done attempting to bind parameter 'employeeId' of type 'System.Int64'.
+2021-03-23 15:07:22.894 +01:00 [DBG] Attempting to validate the bound parameter 'employeeId' of type 'System.Int64' ...
+2021-03-23 15:07:22.895 +01:00 [DBG] Done attempting to validate the bound parameter 'employeeId' of type 'System.Int64'.
+2021-03-23 15:07:22.899 +01:00 [DBG] Executing GetEmployee from controller EmployeeController
+2021-03-23 15:07:22.903 +01:00 [DBG] DeleteEmployeeById method from service Employeeervice with value : 2
+2021-03-23 15:07:22.905 +01:00 [INF] Entity Framework Core 3.1.10 initialized 'EmployeeContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=Employee 
+2021-03-23 15:07:22.909 +01:00 [DBG] DeleteTodoById method from repository Employeeervice with value : 2
+2021-03-23 15:07:22.911 +01:00 [DBG] Context 'EmployeeContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2021-03-23 15:07:22.914 +01:00 [DBG] An 'Employee' entity tracked by 'EmployeeContext' changed from '"Unchanged"' to '"Deleted"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2021-03-23 15:07:22.930 +01:00 [DBG] SaveChanges starting for 'EmployeeContext'.
+2021-03-23 15:07:22.932 +01:00 [INF] Saved 1 entities to in-memory store.
+2021-03-23 15:07:22.937 +01:00 [DBG] An 'Employee' entity tracked by 'EmployeeContext' changed from '"Deleted"' to '"Detached"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2021-03-23 15:07:22.938 +01:00 [DBG] SaveChanges completed for 'EmployeeContext' with 1 entities written to the database.
+2021-03-23 15:07:22.941 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2021-03-23 15:07:22.946 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2021-03-23 15:07:22.950 +01:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2021-03-23 15:07:22.951 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2021-03-23 15:07:22.952 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2021-03-23 15:07:22.953 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2021-03-23 15:07:22.954 +01:00 [INF] Executing ObjectResult, writing value of type 'System.Int64'.
+2021-03-23 15:07:22.955 +01:00 [INF] Executed action Devon4Net.WebAPI.Implementation.Business.EmployeeManagement.Controllers.EmployeeController.Delete (Devon4Net.WebAPI.Implementation) in 79.2808ms
+2021-03-23 15:07:22.962 +01:00 [DBG] 'EmployeeContext' disposed.
+2021-03-23 15:07:22.964 +01:00 [INF] Request finished in 192.1289ms 200 application/json; charset=utf-8
+2021-03-23 15:12:14.074 +01:00 [DBG] Connection id "0HM7E0HCQUC23" received FIN.
+2021-03-23 15:12:14.079 +01:00 [DBG] Connection id "0HM7E0HCQUC23" is closed. The last processed stream ID was 11.
+2021-03-23 15:12:14.080 +01:00 [DBG] Connection id "0HM7E0HCQUC23" sending FIN because: "The client closed the connection."
+2021-03-23 15:12:14.091 +01:00 [DBG] Connection id "0HM7E0HCQUC23" stopped.
