@@ -57,13 +57,36 @@ namespace Devon4Net.WebAPI.Implementation.Business.BookManagement.Service
         {
             Devon4NetLogger.Debug("DeleteAuthorById method from service AuthorService");
             var author = await _authorRepository.GetFirstOrDefault(a => a.Id == id).ConfigureAwait(false);
-
             if (author == null)
             {
                 throw new Exception($"The author with id : {id} has not been found in the DataBase");
             }
 
+            var authorBooks = await _authorBookRepository.Get(x => x.AuthorId == id).ConfigureAwait(false);
+            var books = await GetBooksByAuthorBooks(authorBooks).ConfigureAwait(false);
+            var authorBooksDeleted = await _authorBookRepository.DeleteAuthorBooksFromList(authorBooks).ConfigureAwait(false);
+            if (!authorBooksDeleted)
+            {
+                throw new Exception($"Author with id: {id} was found but authorbooks related with it could not be deleted");
+            }
+
+            var booksDeleted = await _bookRepository.DeleteBooksFromList(books).ConfigureAwait(false);
+            if (!booksDeleted)
+            {
+                throw new Exception($"Author with id: {id} was found but books published by it could not be deleted");
+            }
+
             return await _authorRepository.DeleteAuthorById(id).ConfigureAwait(false);
+        }
+
+        private async Task<IList<Book>> GetBooksByAuthorBooks(IList<AuthorBook> authorBooks)
+        {
+            var books = new List<Book>();
+            foreach (AuthorBook a in authorBooks)
+            {
+                books.Add(await _bookRepository.GetBookById(a.BookId).ConfigureAwait(false));
+            }
+            return books;
         }
 
         public async Task<IList<AuthorDto>> GetAllAuthors()
@@ -100,8 +123,8 @@ namespace Devon4Net.WebAPI.Implementation.Business.BookManagement.Service
                 throw new ArgumentException("A field or more should be filled");
             }
 
-            var newBookDto = await _httpClientHandler.Send<BookDto>(HttpMethod.Post, "Books", "v1/bookmanagement/createbook", bookDto, MediaType.ApplicationJson, null, true, false).ConfigureAwait(false);
-            var newBook = await _bookRepository.GetFirstOrDefault(x => x.Title == bookDto.Title && x.Summary == bookDto.Summary && x.Genere == bookDto.Genere).ConfigureAwait(false);
+            var newBookDto = await _httpClientHandler.Send<BookDto>(HttpMethod.Post, "Books", "v1/bookmanagement/createbook", bookDto, MediaType.ApplicationJson, null, true, true).ConfigureAwait(false);
+            var newBook = await _bookRepository.GetFirstOrDefault(x => x.Title == newBookDto.Title && x.Summary == newBookDto.Summary && x.Genere == newBookDto.Genere).ConfigureAwait(false);
             var authorBook = await _authorBookRepository.Create(authorId, newBook.Id, DateTime.Now, DateTime.Now.AddYears(_alejandriaOptions.Validity)).ConfigureAwait(false);
 
             return BookConverter.ModelToDto(newBook);

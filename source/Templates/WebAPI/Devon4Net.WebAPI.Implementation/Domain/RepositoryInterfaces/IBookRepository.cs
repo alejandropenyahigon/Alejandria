@@ -2,6 +2,7 @@
 using Devon4Net.WebAPI.Implementation.Business.BookManagement.Dto;
 using Devon4Net.WebAPI.Implementation.Domain.Entities;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Devon4Net.WebAPI.Implementation.Domain.RepositoryInterfaces
@@ -40,5 +41,12 @@ namespace Devon4Net.WebAPI.Implementation.Domain.RepositoryInterfaces
         /// <param name="title"></param>
         /// <returns></returns>
         Task<Book> GetBookByTitle(string title);
+
+        /// <summary>
+        /// Deletes all Books in a List<Book> from de DB
+        /// </summary>
+        /// <param name="books"></param>
+        /// <returns></returns>
+        Task<bool> DeleteBooksFromList(IList<Book> books);
     }
 }

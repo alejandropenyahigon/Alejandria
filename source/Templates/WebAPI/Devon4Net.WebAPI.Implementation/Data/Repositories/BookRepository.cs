@@ -6,6 +6,7 @@ using Devon4Net.WebAPI.Implementation.Domain.Database;
 using Devon4Net.WebAPI.Implementation.Domain.Entities;
 using Devon4Net.WebAPI.Implementation.Domain.RepositoryInterfaces;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Devon4Net.WebAPI.Implementation.Data.Repositories
@@ -52,6 +53,27 @@ namespace Devon4Net.WebAPI.Implementation.Data.Repositories
             }
 
             throw new ApplicationException($"The Book entity {id} has not been deleted.");
+        }
+
+        /// <summary>
+        /// Deletes all Books in a List<Book> from de DB
+        /// </summary>
+        /// <param name="books"></param>
+        /// <returns></returns>
+        public async Task<bool> DeleteBooksFromList(IList<Book> books)
+        {
+            Devon4NetLogger.Debug($"DeleteBookFromList method from BookRepository");
+            
+            foreach(Book b in books)
+            {
+                var itemDeleted = await Delete(x => x.Id == b.Id).ConfigureAwait(false);
+                if (!itemDeleted)
+                {
+                    Devon4NetLogger.Debug($"The book with value : {b.Title} could not be removed");
+                    return false;
+                }
+            }
+            return true;
         }
 
         /// <summary>

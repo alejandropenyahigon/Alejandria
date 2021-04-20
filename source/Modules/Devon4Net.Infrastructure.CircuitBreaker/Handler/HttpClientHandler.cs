@@ -180,6 +180,11 @@ namespace Devon4Net.Infrastructure.CircuitBreaker.Handler
 
         private T Deserialize<T>(string input, bool useCamelCase)
         {
+            var result0 = typeof(T).Name;
+            var result1 = BuiltInTypes.GetBuiltInTypeObjecNames().Contains(typeof(T).Name);
+            var result3 = JsonSerializer.Deserialize<T>(input, useCamelCase ? CamelJsonSerializerOptions : null);
+            var result4 = JsonSerializer.Deserialize<T>(input, CamelJsonSerializerOptions);
+            var result5 = JsonSerializer.Deserialize<T>(input,  null);
             return string.IsNullOrEmpty(input)
                 ? default
                 : BuiltInTypes.GetBuiltInTypeObjecNames().Contains(typeof(T).Name)  ? (T)Convert.ChangeType(input, typeof(T)) : JsonSerializer.Deserialize<T>(input, useCamelCase ? CamelJsonSerializerOptions : null);

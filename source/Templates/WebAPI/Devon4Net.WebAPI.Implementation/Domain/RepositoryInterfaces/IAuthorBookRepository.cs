@@ -1,6 +1,7 @@
 ﻿using Devon4Net.Domain.UnitOfWork.Repository;
 using Devon4Net.WebAPI.Implementation.Domain.Entities;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Devon4Net.WebAPI.Implementation.Domain.RepositoryInterfaces
@@ -24,5 +25,12 @@ namespace Devon4Net.WebAPI.Implementation.Domain.RepositoryInterfaces
         /// <param name="id"></param>
         /// <returns></returns>
         Task<Guid> DeleteAuthorBookByBookID(Guid id);
+
+        /// <summary>
+        /// Deletes all AuthorBooks in a List<AuthorBook> from de DB
+        /// </summary>
+        /// <param name="authorBooks"></param>
+        /// <returns></returns>
+        Task<bool> DeleteAuthorBooksFromList(IList<AuthorBook> authorBooks);
     }
 }
