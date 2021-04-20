@@ -18,6 +18,7 @@ namespace Devon4Net.WebAPI.Implementation.Business.BookManagement.Service
     public class BookService : Service<AlejandriaContext>, IBookService
 	{
         private readonly IBookRepository _bookRepository;
+        private readonly IAuthorBookRepository _authorBookRepository;
         private readonly AlejandriaOptions _alejandriaOptions;
 
         /// <summary>
@@ -27,8 +28,8 @@ namespace Devon4Net.WebAPI.Implementation.Business.BookManagement.Service
 		public BookService(IUnitOfWork<AlejandriaContext> uoW, IOptions<AlejandriaOptions> alejandriaOptions) : base(uoW)
         {
             _bookRepository = uoW.Repository<IBookRepository>();
+            _authorBookRepository = uoW.Repository<IAuthorBookRepository>();
             _alejandriaOptions = alejandriaOptions.Value;
-
         }
 
         /// <summary>
@@ -54,6 +55,7 @@ namespace Devon4Net.WebAPI.Implementation.Business.BookManagement.Service
         public async Task<Guid> DeleteBookById(Guid id)
         {
             Devon4NetLogger.Debug($"DeleteBookById method from service BookService with value: {id}");
+            var authorBook = await _authorBookRepository.DeleteAuthorBookByBookID(id).ConfigureAwait(false);
             return await _bookRepository.DeleteBookById(id).ConfigureAwait(false);
         }
 

@@ -66,6 +66,7 @@ namespace Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Controllers
         /// <returns></returns>
         [HttpPost]
         [Route("create")]
+        [ProducesResponseType(typeof(AuthorDto), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
@@ -82,8 +83,9 @@ namespace Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Controllers
         /// </summary>
         [HttpPost]
         [HttpOptions]
-        [Authorize(AuthenticationSchemes = AuthConst.AuthenticationScheme, Roles = AuthConst.AlejandriaAuthor)]
+        //[Authorize(AuthenticationSchemes = AuthConst.AuthenticationScheme, Roles = AuthConst.AlejandriaAuthor)]
         [Route("publish")]
+        [ProducesResponseType(typeof(BookDto), StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -101,6 +103,7 @@ namespace Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Controllers
         /// </summary>
         [HttpGet]
         [Route("authors")]
+        [ProducesResponseType(typeof(IList<AuthorDto>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]

@@ -17,5 +17,12 @@ namespace Devon4Net.WebAPI.Implementation.Domain.RepositoryInterfaces
         /// <param name="bookId"></param>
         /// <returns></returns>
         Task<AuthorBook> Create(Guid authorId, Guid bookId, DateTime now, DateTime validityDate);
+
+        /// <summary>
+        /// Deletes AuthorBook with BookId
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        Task<Guid> DeleteAuthorBookByBookID(Guid id);
     }
 }

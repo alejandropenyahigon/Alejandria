@@ -32,5 +32,17 @@ namespace Devon4Net.WebAPI.Implementation.Data.Repositories
             Devon4NetLogger.Debug($"Create AuthorBook method from repository AuthorBookRepository with value : AuthorId = {authorId} y BookId= {bookId}");
             return await Create(new AuthorBook { AuthorId = authorId, BookId = bookId, PublishDate = now, ValidityDate = validityDate }).ConfigureAwait(false);
         }
+
+        public async Task<Guid> DeleteAuthorBookByBookID(Guid id)
+        {
+            Devon4NetLogger.Debug($"DeleteAuthorBookByBookID method from repository AuthorBookRepository with value : BookId = {id}");
+            var deleted = await Delete(x => x.BookId == id).ConfigureAwait(false);
+            if (deleted)
+            {
+                return id;
+            }
+
+            throw new ApplicationException($"The AuthorBook with BookId {id} has not been deleted.");
+        }
     }
 }
