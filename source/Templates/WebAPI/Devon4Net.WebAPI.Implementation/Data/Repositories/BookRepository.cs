@@ -44,7 +44,7 @@ namespace Devon4Net.WebAPI.Implementation.Data.Repositories
         /// <returns></returns>
         public async Task<Guid> DeleteBookById(Guid id)
         {
-            Devon4NetLogger.Debug($"DeleteBookBtId method from repository BookRepository with value : {id}");
+            Devon4NetLogger.Debug($"DeleteBookById method from repository BookRepository with value : {id}");
             var deleted = await Delete(x => x.Id == id).ConfigureAwait(false);
 
             if (deleted)

@@ -64,6 +64,7 @@ namespace Devon4Net.WebAPI.Implementation.Business.BookManagement.Service
 
             var authorBooks = await _authorBookRepository.Get(x => x.AuthorId == id).ConfigureAwait(false);
             var books = await GetBooksByAuthorBooks(authorBooks).ConfigureAwait(false);
+
             var authorBooksDeleted = await _authorBookRepository.DeleteAuthorBooksFromList(authorBooks).ConfigureAwait(false);
             if (!authorBooksDeleted)
             {

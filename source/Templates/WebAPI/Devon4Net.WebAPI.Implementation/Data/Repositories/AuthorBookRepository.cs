@@ -48,14 +48,14 @@ namespace Devon4Net.WebAPI.Implementation.Data.Repositories
 
         public async Task<bool> DeleteAuthorBooksFromList(IList<AuthorBook> authorBooks)
         {
-            Devon4NetLogger.Debug($"DeleteBookFromList method from BookRepository");
+            Devon4NetLogger.Debug($"DeleteAuthorBookFromList method from AuthorBookRepository");
 
             foreach(AuthorBook a in authorBooks)
             {
                 var itemDeleted = await Delete(x => x.Id == a.Id).ConfigureAwait(false);
                 if (!itemDeleted)
                 {
-                    Devon4NetLogger.Debug($"The book with value : {a.Id} could not be removed");
+                    Devon4NetLogger.Debug($"The AuthorBook entitie with value : {a.Id} could not be removed");
                     return false;
                 }
             }
