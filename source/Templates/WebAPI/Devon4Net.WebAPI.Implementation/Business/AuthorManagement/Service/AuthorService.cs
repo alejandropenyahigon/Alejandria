@@ -124,11 +124,21 @@ namespace Devon4Net.WebAPI.Implementation.Business.BookManagement.Service
                 throw new ArgumentException("A field or more should be filled");
             }
 
-            var newBookDto = await _httpClientHandler.Send<BookDto>(HttpMethod.Post, "Books", "v1/bookmanagement/createbook", bookDto, MediaType.ApplicationJson, null, true, true).ConfigureAwait(false);
-            var newBook = await _bookRepository.GetFirstOrDefault(x => x.Title == newBookDto.Title && x.Summary == newBookDto.Summary && x.Genere == newBookDto.Genere).ConfigureAwait(false);
-            var authorBook = await _authorBookRepository.Create(authorId, newBook.Id, DateTime.Now, DateTime.Now.AddYears(_alejandriaOptions.Validity)).ConfigureAwait(false);
+            var transaction = await UoW.BeginTransaction().ConfigureAwait(false);
+            try
+            {
+                var newBookDto = await _httpClientHandler.Send<BookDto>(HttpMethod.Post, "Books", "v1/bookmanagement/createbook", bookDto, MediaType.ApplicationJson, null, true, true).ConfigureAwait(false);
+                var newBook = await _bookRepository.GetFirstOrDefault(x => x.Title == newBookDto.Title && x.Summary == newBookDto.Summary && x.Genere == newBookDto.Genere).ConfigureAwait(false);
+                var authorBook = await _authorBookRepository.Create(authorId, newBook.Id, DateTime.Now, DateTime.Now.AddYears(_alejandriaOptions.Validity)).ConfigureAwait(false);
 
-            return BookConverter.ModelToDto(newBook);
+                await UoW.Commit(transaction).ConfigureAwait(false);
+                return BookConverter.ModelToDto(newBook);
+            }
+            catch
+            {
+                await UoW.Rollback(transaction).ConfigureAwait(false);
+                throw new Exception("A problem has occured while executing the method PublishBook from class AuthorService");
+            }
         }
     }
 }

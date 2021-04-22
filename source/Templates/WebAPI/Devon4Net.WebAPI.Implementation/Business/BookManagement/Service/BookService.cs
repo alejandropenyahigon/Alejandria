@@ -16,16 +16,16 @@ namespace Devon4Net.WebAPI.Implementation.Business.BookManagement.Service
     /// Book service implementation
     /// </summary>
     public class BookService : Service<AlejandriaContext>, IBookService
-	{
+    {
         private readonly IBookRepository _bookRepository;
         private readonly IAuthorBookRepository _authorBookRepository;
         private readonly AlejandriaOptions _alejandriaOptions;
 
         /// <summary>
-		/// Constructor
-		/// </summary>
+        /// Constructor
+        /// </summary>
         // Se Ejecuta cada vez que se accede a un endpoint.
-		public BookService(IUnitOfWork<AlejandriaContext> uoW, IOptions<AlejandriaOptions> alejandriaOptions) : base(uoW)
+        public BookService(IUnitOfWork<AlejandriaContext> uoW, IOptions<AlejandriaOptions> alejandriaOptions) : base(uoW)
         {
             _bookRepository = uoW.Repository<IBookRepository>();
             _authorBookRepository = uoW.Repository<IAuthorBookRepository>();
@@ -43,7 +43,7 @@ namespace Devon4Net.WebAPI.Implementation.Business.BookManagement.Service
         {
             Devon4NetLogger.Debug($"CreateBook method from service BookService with values : Title = {bookDto.Title}, Summary = {bookDto.Summary}, Genere = {bookDto.Genere}");
             var result = await _bookRepository.Create(bookDto).ConfigureAwait(false);
-            var validity =_alejandriaOptions.Validity;
+            var validity = _alejandriaOptions.Validity;
             return BookConverter.ModelToDto(result);
         }
 
@@ -83,14 +83,14 @@ namespace Devon4Net.WebAPI.Implementation.Business.BookManagement.Service
         {
             var book = await _bookRepository.GetFirstOrDefault(b => b.Id == id).ConfigureAwait(false);
 
-            if(book == null)
+            if (book == null)
             {
                 throw new Exception("The book has not been found");
             }
 
-            book.Title = bookDto.Title;
-            book.Summary = bookDto.Summary;
-            book.Genere = bookDto.Genere;
+            if (bookDto.Title != null && !bookDto.Title.Equals("string")) book.Title = bookDto.Title;
+            if (bookDto.Summary != null && !bookDto.Summary.Equals("string")) book.Summary = bookDto.Summary;
+            if (bookDto.Genere != null && !bookDto.Genere.Equals("string")) book.Genere = bookDto.Genere;
 
             return BookConverter.ModelToDto(await _bookRepository.Update(book).ConfigureAwait(false));
         }
