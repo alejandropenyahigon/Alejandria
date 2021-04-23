@@ -31,6 +31,7 @@ namespace Devon4Net.WebAPI.Implementation.Business.BookManagement.Service
         private readonly IAuthorRepository _authorRepository;
         private readonly IBookRepository _bookRepository;
         private readonly IAuthorBookRepository _authorBookRepository;
+        private readonly IUserRepository _userBookRepository;
         private readonly AlejandriaOptions _alejandriaOptions;
         private readonly IHttpClientHandler _httpClientHandler;
 
@@ -43,6 +44,7 @@ namespace Devon4Net.WebAPI.Implementation.Business.BookManagement.Service
             _authorRepository = uoW.Repository<IAuthorRepository>();
             _bookRepository = uoW.Repository<IBookRepository>();
             _authorBookRepository = uoW.Repository<IAuthorBookRepository>();
+            _userBookRepository = uoW.Repository<IUserRepository>();
             _alejandriaOptions = alejandriaOptions.Value;
             _httpClientHandler = httpClientHandler;
         }
@@ -139,6 +141,13 @@ namespace Devon4Net.WebAPI.Implementation.Business.BookManagement.Service
                 await UoW.Rollback(transaction).ConfigureAwait(false);
                 throw new Exception("A problem has occured while executing the method PublishBook from class AuthorService");
             }
+        }
+
+        public async Task<UserDto> CreateUser(string userId, string password, string role, AuthorDto authorDto = null)
+        {
+            Devon4NetLogger.Debug($"Executing method CreateUser from class AuthorService with values : userId = {userId}, password = {password}, role = {role}");
+            var newAuthor = await _authorRepository.Create(authorDto).ConfigureAwait(false);
+            return UserConverter.ModelToDto(await _userBookRepository.CreateUser(userId, password, role, newAuthor.Id).ConfigureAwait(false));
         }
     }
 }

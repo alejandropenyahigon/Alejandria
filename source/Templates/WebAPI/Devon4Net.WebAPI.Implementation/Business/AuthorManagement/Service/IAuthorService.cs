@@ -69,5 +69,7 @@ namespace Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Service
         /// </summary>
         /// <returns>AuthorListDto</returns>
         public Task<IList<AuthorDto>> GetAllAuthors();
+
+        public Task<UserDto> CreateUser(string userId, string password, string role, AuthorDto authorDto);
     }
 }

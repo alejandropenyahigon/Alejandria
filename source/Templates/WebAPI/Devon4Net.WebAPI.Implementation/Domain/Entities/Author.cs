@@ -12,6 +12,7 @@ namespace Devon4Net.WebAPI.Implementation.Domain.Entities
         public Author()
         {
             AuthorBook = new HashSet<AuthorBook>();
+            Users = new HashSet<Users>();
         }
 
         public Guid Id { get; set; }
@@ -21,5 +22,6 @@ namespace Devon4Net.WebAPI.Implementation.Domain.Entities
         public string Name { get; set; }
 
         public virtual ICollection<AuthorBook> AuthorBook { get; set; }
+        public virtual ICollection<Users> Users { get; set; }
     }
 }

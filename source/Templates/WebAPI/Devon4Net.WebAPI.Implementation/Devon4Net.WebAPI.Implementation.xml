@@ -391,6 +391,31 @@
             the Phone
             </summary>
         </member>
+        <member name="T:Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Dto.UserDto">
+            <summary>
+            Class UserDto
+            </summary>
+        </member>
+        <member name="P:Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Dto.UserDto.UserId">
+            <summary>
+            the UserId
+            </summary>
+        </member>
+        <member name="P:Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Dto.UserDto.Password">
+            <summary>
+            the Password
+            </summary>
+        </member>
+        <member name="P:Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Dto.UserDto.UserRole">
+            <summary>
+            the UserRole
+            </summary>
+        </member>
+        <member name="P:Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Dto.UserDto.AuthorId">
+            <summary>
+            the AuthorId
+            </summary>
+        </member>
         <member name="T:Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Service.IAuthorService">
             <summary>
             IAuthorService
