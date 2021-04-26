@@ -14,12 +14,9 @@ using Devon4Net.WebAPI.Implementation.Domain.Entities;
 using Devon4Net.WebAPI.Implementation.Domain.RepositoryInterfaces;
 using Devon4Net.WebAPI.Implementation.Options;
 using Microsoft.Extensions.Options;
-using Devon4Net.Infrastructure.Common.Options.CircuitBreaker;
-using Devon4Net.Infrastructure.CircuitBreaker;
 using Devon4Net.Infrastructure.CircuitBreaker.Handler;
 using System.Net.Http;
 using Devon4Net.Infrastructure.CircuitBreaker.Common.Enums;
-using Microsoft.AspNetCore.Mvc;
 
 namespace Devon4Net.WebAPI.Implementation.Business.BookManagement.Service
 {
@@ -146,6 +143,9 @@ namespace Devon4Net.WebAPI.Implementation.Business.BookManagement.Service
         public async Task<UserDto> CreateUser(string userId, string password, string role, AuthorDto authorDto = null)
         {
             Devon4NetLogger.Debug($"Executing method CreateUser from class AuthorService with values : userId = {userId}, password = {password}, role = {role}");
+
+            if (authorDto == null) return UserConverter.ModelToDto(await _userBookRepository.CreateUser(userId, password, role, null).ConfigureAwait(false));
+
             var newAuthor = await _authorRepository.Create(authorDto).ConfigureAwait(false);
             return UserConverter.ModelToDto(await _userBookRepository.CreateUser(userId, password, role, newAuthor.Id).ConfigureAwait(false));
         }

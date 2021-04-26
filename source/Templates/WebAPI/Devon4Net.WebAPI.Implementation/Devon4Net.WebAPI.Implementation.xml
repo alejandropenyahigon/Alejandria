@@ -1352,6 +1352,27 @@
             <param name="id"></param>
             <returns></returns>
         </member>
+        <member name="T:Devon4Net.WebAPI.Implementation.Data.Repositories.UserRepository">
+            <summary>
+            Repository implementation for the User
+            </summary>
+        </member>
+        <member name="M:Devon4Net.WebAPI.Implementation.Data.Repositories.UserRepository.#ctor(Devon4Net.WebAPI.Implementation.Domain.Database.AlejandriaContext)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:Devon4Net.WebAPI.Implementation.Data.Repositories.UserRepository.CreateUser(System.String,System.String,System.String,System.Nullable{System.Guid})">
+            <summary>
+            Creates a User
+            </summary>
+            <param name="userId"></param>
+            <param name="password"></param>
+            <param name="role"></param>
+            <param name="authorId"></param>
+            <returns></returns>
+        </member>
         <member name="T:Devon4Net.WebAPI.Implementation.Domain.Database.EmployeeContext">
             <summary>
             Employee database context definition
@@ -1604,6 +1625,21 @@
             DeleteTodoById
             </summary>
             <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Devon4Net.WebAPI.Implementation.Domain.RepositoryInterfaces.IUserRepository">
+            <summary>
+            UserRepository interface
+            </summary>
+        </member>
+        <member name="M:Devon4Net.WebAPI.Implementation.Domain.RepositoryInterfaces.IUserRepository.CreateUser(System.String,System.String,System.String,System.Nullable{System.Guid})">
+            <summary>
+            Create
+            </summary>
+            <param name="userId"></param>
+            <param name="password"></param>
+            <param name="role"></param>
+            <param name="authorId"></param>
             <returns></returns>
         </member>
     </members>
