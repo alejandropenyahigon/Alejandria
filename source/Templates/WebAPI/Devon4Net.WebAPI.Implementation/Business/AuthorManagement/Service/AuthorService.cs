@@ -146,8 +146,30 @@ namespace Devon4Net.WebAPI.Implementation.Business.BookManagement.Service
 
             if (authorDto == null) return UserConverter.ModelToDto(await _userBookRepository.CreateUser(userId, password, role, null).ConfigureAwait(false));
 
-            var newAuthor = await _authorRepository.Create(authorDto).ConfigureAwait(false);
-            return UserConverter.ModelToDto(await _userBookRepository.CreateUser(userId, password, role, newAuthor.Id).ConfigureAwait(false));
+            var transaction = await UoW.BeginTransaction().ConfigureAwait(false);
+            try
+            {
+                var newAuthor = await _authorRepository.Create(authorDto).ConfigureAwait(false);
+                var newUserDto = UserConverter.ModelToDto(await _userBookRepository.CreateUser(userId, password, role, newAuthor.Id).ConfigureAwait(false));
+                await UoW.Commit(transaction).ConfigureAwait(false);
+                return newUserDto;
+            }
+            catch
+            {
+                await UoW.Rollback(transaction).ConfigureAwait(false);
+                throw new Exception("An error ocurred while creating the new User");
+            }
+        }
+
+        public async Task<UserDto> UserLogin(string userId, string password)
+        {
+            Devon4NetLogger.Debug($"Executing method LoginUser from class AuthorService with values : UserId = {userId} and Password = {password}");
+            var userInDb = await _userBookRepository.GetUserByCredentials(userId, password).ConfigureAwait(false);
+            if (userInDb == null) 
+            {
+                //TODO: return a message 404 not found or something similar
+            }
+            return UserConverter.ModelToDto(userInDb);
         }
     }
 }

@@ -142,5 +142,16 @@ namespace Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Controllers
             return Ok(await _authorService.CreateUser(userId, password, role, author).ConfigureAwait(false));
         }
         
+        [HttpGet]
+        [Route("userlogin")]
+        [ProducesResponseType(typeof(UserDto), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<ActionResult> UserLogin(string userId, string password)
+        {
+            Devon4NetLogger.Debug($"Executing method UserLogin from class AuthorController with values : UserId = {userId} and Password = {password}");
+            return Ok(await _authorService.UserLogin(userId, password).ConfigureAwait(false));
+        }
     }
 }

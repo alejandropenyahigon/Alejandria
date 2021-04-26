@@ -469,6 +469,24 @@
             </summary>
             <returns>AuthorListDto</returns>
         </member>
+        <member name="M:Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Service.IAuthorService.CreateUser(System.String,System.String,System.String,Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Dto.AuthorDto)">
+            <summary>
+            Creates a new User
+            </summary>
+            <param name="userId"></param>
+            <param name="password"></param>
+            <param name="role"></param>
+            <param name="authorDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Service.IAuthorService.UserLogin(System.String,System.String)">
+            <summary>
+            Returns if there is a User with the same credentials in the DataBase
+            </summary>
+            <param name="userId"></param>
+            <param name="password"></param>
+            <returns></returns>
+        </member>
         <member name="T:Devon4Net.WebAPI.Implementation.Business.BookManagement.Service.AuthorService">
             <summary>
             Book service implementation
@@ -1640,6 +1658,14 @@
             <param name="password"></param>
             <param name="role"></param>
             <param name="authorId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Devon4Net.WebAPI.Implementation.Domain.RepositoryInterfaces.IUserRepository.GetUserByCredentials(System.String,System.String)">
+            <summary>
+            Gets a user from de database with the credentials in the arguments
+            </summary>
+            <param name="userId"></param>
+            <param name="password"></param>
             <returns></returns>
         </member>
     </members>

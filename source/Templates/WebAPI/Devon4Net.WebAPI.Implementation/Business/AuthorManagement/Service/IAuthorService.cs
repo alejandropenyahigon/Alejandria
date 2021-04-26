@@ -70,6 +70,22 @@ namespace Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Service
         /// <returns>AuthorListDto</returns>
         public Task<IList<AuthorDto>> GetAllAuthors();
 
+        /// <summary>
+        /// Creates a new User
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <param name="password"></param>
+        /// <param name="role"></param>
+        /// <param name="authorDto"></param>
+        /// <returns></returns>
         public Task<UserDto> CreateUser(string userId, string password, string role, AuthorDto authorDto);
+
+        /// <summary>
+        /// Returns if there is a User with the same credentials in the DataBase
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
+        public Task<UserDto> UserLogin(string userId, string password);
     }
 }

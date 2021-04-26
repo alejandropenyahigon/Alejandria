@@ -18,5 +18,13 @@ namespace Devon4Net.WebAPI.Implementation.Domain.RepositoryInterfaces
         /// <param name="authorId"></param>
         /// <returns></returns>
         public Task<Users> CreateUser(string userId, string password, string role, Guid? authorId);
+
+        /// <summary>
+        /// Gets a user from de database with the credentials in the arguments
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
+        public Task<Users> GetUserByCredentials(string userId, string password);
     }
 }
