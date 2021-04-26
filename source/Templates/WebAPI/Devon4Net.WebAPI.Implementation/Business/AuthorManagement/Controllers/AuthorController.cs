@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Devon4Net.Infrastructure.JWT.Common.Const;
@@ -77,7 +76,7 @@ namespace Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Controllers
             return Ok(result);
         }
 
-        
+
         ///<summary>
         ///Publishes a book
         /// </summary>
@@ -96,7 +95,7 @@ namespace Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Controllers
             var result = await _authorService.PublishBook(authorId, bookDto).ConfigureAwait(false);
             return Ok(result);
         }
-        
+
 
         /// <summary>
         /// Lists all the authors
@@ -129,7 +128,7 @@ namespace Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Controllers
             return Ok(result);
         }
 
-        
+        //TODO: Refactor
         [HttpPost]
         [Route("createuser")]
         [ProducesResponseType(typeof(UserDto), StatusCodes.Status200OK)]
@@ -141,17 +140,19 @@ namespace Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Controllers
             Devon4NetLogger.Debug($"Executing method CreateUser from class AuthorController with values : userId = {userId}, password = {password}, role = {role}");
             return Ok(await _authorService.CreateUser(userId, password, role, author).ConfigureAwait(false));
         }
-        
-        [HttpGet]
+
+        [HttpPost]
         [Route("userlogin")]
         [ProducesResponseType(typeof(UserDto), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult> UserLogin(string userId, string password)
+        public async Task<ActionResult> UserLogin([FromBody] LoginDto loginDto)
         {
-            Devon4NetLogger.Debug($"Executing method UserLogin from class AuthorController with values : UserId = {userId} and Password = {password}");
-            return Ok(await _authorService.UserLogin(userId, password).ConfigureAwait(false));
+            Devon4NetLogger.Debug($"Executing method UserLogin from class AuthorController with values : UserId = {loginDto.UserId} and Password = {loginDto.Password}");
+            var result = await _authorService.UserLogin(loginDto).ConfigureAwait(false);
+            if (result == null) return NotFound("User not found, try to create a new account");
+            return Ok(result);
         }
     }
 }

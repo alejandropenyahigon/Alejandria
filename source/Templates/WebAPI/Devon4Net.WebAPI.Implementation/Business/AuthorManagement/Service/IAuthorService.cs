@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq.Expressions;
 using System.Threading.Tasks;
 using Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Dto;
 using Devon4Net.WebAPI.Implementation.Business.BookManagement.Dto;
@@ -86,6 +85,6 @@ namespace Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Service
         /// <param name="userId"></param>
         /// <param name="password"></param>
         /// <returns></returns>
-        public Task<UserDto> UserLogin(string userId, string password);
+        public Task<UserDto> UserLogin(LoginDto loginDto);
     }
 }

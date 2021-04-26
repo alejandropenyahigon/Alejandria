@@ -161,16 +161,15 @@ namespace Devon4Net.WebAPI.Implementation.Business.BookManagement.Service
             }
         }
 
-        public async Task<UserDto> UserLogin(string userId, string password)
+        public async Task<UserDto> UserLogin(LoginDto loginDto)
         {
-            Devon4NetLogger.Debug($"Executing method LoginUser from class AuthorService with values : UserId = {userId} and Password = {password}");
-            var userInDb = await _userBookRepository.GetUserByCredentials(userId, password).ConfigureAwait(false);
+            Devon4NetLogger.Debug($"Executing method LoginUser from class AuthorService with values : UserId = {loginDto.UserId} and Password = {loginDto.Password}");
+            var userInDb = await _userBookRepository.GetUserByCredentials(loginDto.UserId, loginDto.Password).ConfigureAwait(false);
             if (userInDb == null) 
             {
-                //TODO: return a message 404 not found or something similar
+                return null;
             }
             return UserConverter.ModelToDto(userInDb);
         }
     }
 }
-
