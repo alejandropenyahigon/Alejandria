@@ -6,9 +6,16 @@ using System.Text;
 
 namespace Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Converters
 {
+    /// <summary>
+    /// UserConverter
+    /// </summary>
     public static class UserConverter
     {
-
+        /// <summary>
+        /// ModelToDto User transformation
+        /// </summary>
+        /// <param name="item"></param>
+        /// <returns></returns>
         public static UserDto ModelToDto(Users item)
         {
             if (item == null) return new UserDto();

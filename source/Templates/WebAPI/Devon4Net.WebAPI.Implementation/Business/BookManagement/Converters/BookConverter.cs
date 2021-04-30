@@ -4,12 +4,12 @@ using Devon4Net.WebAPI.Implementation.Domain.Entities;
 namespace Devon4Net.WebAPI.Implementation.Business.BookManagement.Converters
 {
     /// <summary>
-    /// TodoConverter
+    /// BookConverter
     /// </summary>
     public static class BookConverter
     {
         /// <summary>
-        /// ModelToDto TODO transformation
+        /// ModelToDto Book transformation
         /// </summary>
         /// <param name="item"></param>
         /// <returns></returns>

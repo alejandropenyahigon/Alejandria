@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq.Expressions;
 using System.Threading.Tasks;
 using Devon4Net.WebAPI.Implementation.Business.BookManagement.Dto;
-//using Devon4Net.WebAPI.Implementation.Business.BookManagement.Dto;
-using Devon4Net.WebAPI.Implementation.Domain.Entities;
 
 namespace Devon4Net.WebAPI.Implementation.Business.BookManagement.Service
 {

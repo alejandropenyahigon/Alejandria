@@ -36,6 +36,12 @@ namespace Devon4Net.WebAPI.Implementation.Data.Repositories
             return await Create(new Users { UserId = userId, Password = password, UserRole = role, AuthorId = authorId }).ConfigureAwait(false);
         }
 
+        /// <summary>
+        /// Returns the User information matching the Credentials provided
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
         public Task<Users> GetUserByCredentials(string userId, string password)
         {
             Devon4NetLogger.Debug($"GetUserByCredentials method from repository UserRepository with values : UserId = {userId} and Password = {password}");

@@ -37,6 +37,12 @@ namespace Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Controllers
             JwtHandler = jwtHandler;
         }
 
+        /// <summary>
+        /// Returns the User credentials that matches the Credentials provided
+        /// </summary>
+        /// <param name="user"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
         [HttpPost]
         [HttpOptions]
         [AllowAnonymous]
@@ -60,7 +66,7 @@ namespace Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Controllers
         }
 
         /// <summary>
-        /// Creates an author
+        /// Creates an Author
         /// </summary>
         /// <returns></returns>
         [HttpPost]
@@ -78,7 +84,7 @@ namespace Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Controllers
 
 
         ///<summary>
-        ///Publishes a book
+        ///Publishes a Book
         /// </summary>
         [HttpPost]
         [HttpOptions]
@@ -98,7 +104,7 @@ namespace Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Controllers
 
 
         /// <summary>
-        /// Lists all the authors
+        /// Lists all the Authors
         /// </summary>
         [HttpGet]
         [Route("authors")]
@@ -114,7 +120,7 @@ namespace Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Controllers
         }
 
         /// <summary>
-        /// Deletes an author
+        /// Deletes an Author
         /// </summary>
         [HttpDelete]
         [Route("delete")]
@@ -129,18 +135,29 @@ namespace Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Controllers
         }
 
         //TODO: Refactor
+        /// <summary>
+        /// Creates an User
+        /// </summary>
+        /// <param name="userDto"></param>
+        /// <param name="author"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("createuser")]
         [ProducesResponseType(typeof(UserDto), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult> CreateUser(UserDto userDto, AuthorDto author)
+        public async Task<ActionResult> CreateUser(string userId, string password, string userRole, AuthorDto author)
         {
-            Devon4NetLogger.Debug($"Executing method CreateUser from class AuthorController with values : userId = {userDto.UserId}, password = {userDto.Password}, role = {userDto.UserRole}");
-            return Ok(await _authorService.CreateUser(userDto.UserId, userDto.Password, userDto.UserRole, author).ConfigureAwait(false));
+            Devon4NetLogger.Debug($"Executing method CreateUser from class AuthorController with values : userId = {userId}, password = {password}, role = {userRole}");
+            return Ok(await _authorService.CreateUser(userId, password, userRole, author).ConfigureAwait(false));
         }
 
+        /// <summary>
+        /// Returns the User information that matches the Credentials provided
+        /// </summary>
+        /// <param name="loginDto"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("userlogin")]
         [ProducesResponseType(typeof(UserDto), StatusCodes.Status200OK)]

@@ -1,5 +1,4 @@
-﻿using Devon4Net.Domain.UnitOfWork.Pagination;
-using Devon4Net.Domain.UnitOfWork.Repository;
+﻿using Devon4Net.Domain.UnitOfWork.Repository;
 using Devon4Net.Infrastructure.Log;
 using Devon4Net.WebAPI.Implementation.Business.BookManagement.Dto;
 using Devon4Net.WebAPI.Implementation.Domain.Database;
@@ -38,7 +37,7 @@ namespace Devon4Net.WebAPI.Implementation.Data.Repositories
         }
 
         /// <summary>
-        /// Deletes the book by id
+        /// Deletes the Book by id
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
@@ -99,6 +98,11 @@ namespace Devon4Net.WebAPI.Implementation.Data.Repositories
             return GetFirstOrDefault(x => x.Title == title);
         }
 
+        /// <summary>
+        /// Gets the Book that matches the BookDto provided
+        /// </summary>
+        /// <param name="bookDto"></param>
+        /// <returns></returns>
         public Task<Book> GetBookByBookDto(BookDto bookDto)
         {
             Devon4NetLogger.Debug($"GetBookByBookDto method from repository BookRepository with value : {bookDto.Title}");

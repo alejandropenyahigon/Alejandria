@@ -31,7 +31,7 @@ namespace Devon4Net.WebAPI.Implementation.Business.BookManagement.Controllers
         }
 
         /// <summary>
-        /// Gets the book with the title specified if there is one
+        /// Gets the Book with the title provided if there is one
         /// </summary>
         /// <returns></returns>
         [HttpGet]
@@ -47,7 +47,7 @@ namespace Devon4Net.WebAPI.Implementation.Business.BookManagement.Controllers
         }
         
         /// <summary>
-        /// Creates a book
+        /// Creates a Book
         /// </summary>
         /// <returns></returns>
         [HttpPost]
@@ -64,7 +64,7 @@ namespace Devon4Net.WebAPI.Implementation.Business.BookManagement.Controllers
         }
 
         /// <summary>
-        /// Deletes the book provided the id
+        /// Deletes the Book provided the id
         /// </summary>
         /// <returns></returns>
         [HttpDelete]
@@ -80,7 +80,7 @@ namespace Devon4Net.WebAPI.Implementation.Business.BookManagement.Controllers
         }
 
         /// <summary>
-        /// Modifies the done status of the book provided the data of the book
+        /// Modifies the book provided the data of the book
         /// In this sample, all the data fields are mandatory
         /// </summary>
         /// <returns></returns>

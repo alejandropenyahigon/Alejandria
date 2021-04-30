@@ -47,12 +47,22 @@ namespace Devon4Net.WebAPI.Implementation.Business.BookManagement.Service
             _httpClientHandler = httpClientHandler;
         }
 
+        /// <summary>
+        /// Creates an author
+        /// </summary>
+        /// <param name="authorDto"></param>
+        /// <returns></returns>
         public async Task<AuthorDto> CreateAuthor(AuthorDto authorDto)
         {
             Devon4NetLogger.Debug($"CreateAuthor method from service AuthorService with values : Name = {authorDto.Name}, Surname = {authorDto.Surname}, Email = {authorDto.Email}, Phone = {authorDto.Phone}");
             return AuthorConverter.ModelToDto(await _authorRepository.Create(authorDto).ConfigureAwait(false));
         }
 
+        /// <summary>
+        /// Deletes the author with the id provided
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public async Task<Guid> DeleteAuthorById(Guid id)
         {
             Devon4NetLogger.Debug("DeleteAuthorById method from service AuthorService");
@@ -80,6 +90,11 @@ namespace Devon4Net.WebAPI.Implementation.Business.BookManagement.Service
             return await _authorRepository.DeleteAuthorById(id).ConfigureAwait(false);
         }
 
+        /// <summary>
+        /// Returns the Books related with the AuthorBooks provided
+        /// </summary>
+        /// <param name="authorBooks"></param>
+        /// <returns></returns>
         private async Task<IList<Book>> GetBooksByAuthorBooks(IList<AuthorBook> authorBooks)
         {
             var books = new List<Book>();
@@ -90,6 +105,10 @@ namespace Devon4Net.WebAPI.Implementation.Business.BookManagement.Service
             return books;
         }
 
+        /// <summary>
+        /// Returns all the authors
+        /// </summary>
+        /// <returns></returns>
         public async Task<IEnumerable<AuthorDto>> GetAllAuthors()
         {
             Devon4NetLogger.Debug(" GetAllAuthors method from service AuthorService");
@@ -98,17 +117,36 @@ namespace Devon4Net.WebAPI.Implementation.Business.BookManagement.Service
             return authors.Select(AuthorConverter.ModelToDto);
         }
 
+        /// <summary>
+        /// Gets the author with the name provided
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
         public Task<AuthorDto> GetAuthorByName(string name)
         {
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// Modifies the author with the id provided
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="name"></param>
+        /// <param name="surname"></param>
+        /// <param name="email"></param>
+        /// <param name="phone"></param>
+        /// <returns></returns>
         public Task<Author> ModifyAuthorById(Guid id, string name, string surname, string email, int phone)
         {
             throw new NotImplementedException();
         }
 
-
+        /// <summary>
+        /// Publishes a Book and AuthorBook with linked with the author provided
+        /// </summary>
+        /// <param name="authorId"></param>
+        /// <param name="bookDto"></param>
+        /// <returns></returns>
         public async Task<BookDto> PublishBook(Guid authorId, BookDto bookDto)
         {
             Devon4NetLogger.Debug($"Publish method from service AuthorService with values : Title = {bookDto.Title}, Summary = {bookDto.Summary}, Genere = {bookDto.Genere}");
@@ -135,6 +173,14 @@ namespace Devon4Net.WebAPI.Implementation.Business.BookManagement.Service
             }
         }
 
+        /// <summary>
+        /// Creates an User
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <param name="password"></param>
+        /// <param name="role"></param>
+        /// <param name="authorDto"></param>
+        /// <returns></returns>
         public async Task<UserDto> CreateUser(string userId, string password, string role, AuthorDto authorDto = null)
         {
             Devon4NetLogger.Debug($"Executing method CreateUser from class AuthorService with values : userId = {userId}, password = {password}, role = {role}");
@@ -156,6 +202,11 @@ namespace Devon4Net.WebAPI.Implementation.Business.BookManagement.Service
             }
         }
 
+        /// <summary>
+        /// Returns the User information that matches with the Credentials provided
+        /// </summary>
+        /// <param name="loginDto"></param>
+        /// <returns></returns>
         public async Task<UserDto> UserLogin(LoginDto loginDto)
         {
             Devon4NetLogger.Debug($"Executing method LoginUser from class AuthorService with values : UserId = {loginDto.UserId} and Password = {loginDto.Password}");

@@ -24,7 +24,7 @@ namespace Devon4Net.WebAPI.Implementation.Data.Repositories
         }
 
         /// <summary>
-        /// Creates the TODO
+        /// Creates the Author
         /// </summary>
         /// <param name="name"></param>
         /// <param name="surname"></param>
@@ -37,6 +37,11 @@ namespace Devon4Net.WebAPI.Implementation.Data.Repositories
             return Create(new Author { Name = authorDto.Name, Surname = authorDto.Surname, Email = authorDto.Email, Phone = authorDto.Phone });
         }
 
+        /// <summary>
+        /// Deletes the author with the id provided
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public async Task<Guid> DeleteAuthorById(Guid id)
         {
             Devon4NetLogger.Debug($"DeletetodoById method from repository AuthorRepository with value : {id}");
@@ -51,7 +56,7 @@ namespace Devon4Net.WebAPI.Implementation.Data.Repositories
         }
 
         /// <summary>
-        /// Gets all the TODO
+        /// Gets all the Authors
         /// </summary>
         /// <returns></returns>
         public async Task<IEnumerable<Author>> GetAllAuthors()

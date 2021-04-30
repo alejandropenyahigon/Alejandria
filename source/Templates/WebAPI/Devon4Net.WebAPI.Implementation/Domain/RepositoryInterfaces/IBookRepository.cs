@@ -13,7 +13,7 @@ namespace Devon4Net.WebAPI.Implementation.Domain.RepositoryInterfaces
     public interface IBookRepository : IRepository<Book>
     {
         /// <summary>
-        /// Create
+        /// Creates a Book
         /// </summary>
         /// <param name="title"></param>
         /// <param name="summary"></param>
