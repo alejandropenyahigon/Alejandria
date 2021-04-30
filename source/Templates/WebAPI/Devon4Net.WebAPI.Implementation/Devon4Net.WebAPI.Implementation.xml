@@ -479,7 +479,7 @@
             <param name="authorDto"></param>
             <returns></returns>
         </member>
-        <member name="M:Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Service.IAuthorService.UserLogin(System.String,System.String)">
+        <member name="M:Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Service.IAuthorService.UserLogin(Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Dto.LoginDto)">
             <summary>
             Returns if there is a User with the same credentials in the DataBase
             </summary>

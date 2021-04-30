@@ -17,6 +17,7 @@ using Microsoft.Extensions.Options;
 using Devon4Net.Infrastructure.CircuitBreaker.Handler;
 using System.Net.Http;
 using Devon4Net.Infrastructure.CircuitBreaker.Common.Enums;
+using System.Linq;
 
 namespace Devon4Net.WebAPI.Implementation.Business.BookManagement.Service
 {
@@ -89,18 +90,12 @@ namespace Devon4Net.WebAPI.Implementation.Business.BookManagement.Service
             return books;
         }
 
-        public async Task<IList<AuthorDto>> GetAllAuthors()
+        public async Task<IEnumerable<AuthorDto>> GetAllAuthors()
         {
             Devon4NetLogger.Debug(" GetAllAuthors method from service AuthorService");
             var authors = await _authorRepository.GetAllAuthors().ConfigureAwait(false);
-            var result = new List<AuthorDto>();
-
-            foreach (Author i in authors)
-            {
-                result.Add(AuthorConverter.ModelToDto(i));
-            }
-
-            return result;
+            
+            return authors.Select(AuthorConverter.ModelToDto);
         }
 
         public Task<AuthorDto> GetAuthorByName(string name)
@@ -127,7 +122,7 @@ namespace Devon4Net.WebAPI.Implementation.Business.BookManagement.Service
             try
             {
                 var newBookDto = await _httpClientHandler.Send<BookDto>(HttpMethod.Post, "Books", "v1/bookmanagement/createbook", bookDto, MediaType.ApplicationJson, null, true, true).ConfigureAwait(false);
-                var newBook = await _bookRepository.GetFirstOrDefault(x => x.Title == newBookDto.Title && x.Summary == newBookDto.Summary && x.Genere == newBookDto.Genere).ConfigureAwait(false);
+                var newBook = await _bookRepository.GetBookByBookDto(newBookDto).ConfigureAwait(false);
                 var authorBook = await _authorBookRepository.Create(authorId, newBook.Id, DateTime.Now, DateTime.Now.AddYears(_alejandriaOptions.Validity)).ConfigureAwait(false);
 
                 await UoW.Commit(transaction).ConfigureAwait(false);

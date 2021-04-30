@@ -31,10 +31,10 @@ namespace Devon4Net.WebAPI.Implementation.Data.Repositories
         /// <param name="summary"></param>
         /// <param name="genere"></param>
         /// <returns></returns>
-        public async Task<Book> Create(BookDto bookDto)
+        public Task<Book> Create(BookDto bookDto)
         {
             Devon4NetLogger.Debug($"SetTodo method from repository BookService with value: {bookDto.Title}");
-            return await Create(new Book {Title = bookDto.Title, Summary = bookDto.Summary, Genere = bookDto.Genere }).ConfigureAwait(false);
+            return Create(new Book {Title = bookDto.Title, Summary = bookDto.Summary, Genere = bookDto.Genere });
         }
 
         /// <summary>
@@ -67,6 +67,7 @@ namespace Devon4Net.WebAPI.Implementation.Data.Repositories
             foreach(Book b in books)
             {
                 var itemDeleted = await Delete(x => x.Id == b.Id).ConfigureAwait(false);
+                //Maybe let the controller handle this
                 if (!itemDeleted)
                 {
                     Devon4NetLogger.Debug($"The book with value : {b.Title} could not be removed");
@@ -92,10 +93,16 @@ namespace Devon4Net.WebAPI.Implementation.Data.Repositories
         /// </summary>
         /// <param name="title"></param>
         /// <returns></returns>
-        public async Task<Book> GetBookByTitle(string title)
+        public Task<Book> GetBookByTitle(string title)
         {
             Devon4NetLogger.Debug($"GetBookByTitle method from repository BookRepository with value : {title}");
-            return await GetFirstOrDefault(x => x.Title == title).ConfigureAwait(false);
+            return GetFirstOrDefault(x => x.Title == title);
+        }
+
+        public Task<Book> GetBookByBookDto(BookDto bookDto)
+        {
+            Devon4NetLogger.Debug($"GetBookByBookDto method from repository BookRepository with value : {bookDto.Title}");
+            return GetFirstOrDefault(x => x.Title == bookDto.Title && x.Summary == bookDto.Summary && x.Genere == bookDto.Summary);
         }
     }
 }

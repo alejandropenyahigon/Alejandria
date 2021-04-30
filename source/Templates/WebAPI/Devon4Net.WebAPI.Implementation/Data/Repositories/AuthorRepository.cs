@@ -54,10 +54,10 @@ namespace Devon4Net.WebAPI.Implementation.Data.Repositories
         /// Gets all the TODO
         /// </summary>
         /// <returns></returns>
-        public async Task<IList<Author>> GetAllAuthors()
+        public async Task<IEnumerable<Author>> GetAllAuthors()
         {
             Devon4NetLogger.Debug("GetAllAuthors method from TodoRepository AuthorService");
             return await Get().ConfigureAwait(false);
-        }
+        }        
     }
 }

@@ -1,0 +1,7 @@
+#Docker will ignore this files/directories while building
+
+Dockerfile
+[b|B]in
+[o|O]bj
+[m|M]odels
+[l|L]ogs

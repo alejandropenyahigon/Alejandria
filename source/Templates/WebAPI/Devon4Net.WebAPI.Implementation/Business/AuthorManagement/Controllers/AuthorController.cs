@@ -102,7 +102,7 @@ namespace Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Controllers
         /// </summary>
         [HttpGet]
         [Route("authors")]
-        [ProducesResponseType(typeof(IList<AuthorDto>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(IEnumerable<AuthorDto>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
@@ -135,10 +135,10 @@ namespace Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult> CreateUser(string userId, string password, string role, AuthorDto author)
+        public async Task<ActionResult> CreateUser(UserDto userDto, AuthorDto author)
         {
-            Devon4NetLogger.Debug($"Executing method CreateUser from class AuthorController with values : userId = {userId}, password = {password}, role = {role}");
-            return Ok(await _authorService.CreateUser(userId, password, role, author).ConfigureAwait(false));
+            Devon4NetLogger.Debug($"Executing method CreateUser from class AuthorController with values : userId = {userDto.UserId}, password = {userDto.Password}, role = {userDto.UserRole}");
+            return Ok(await _authorService.CreateUser(userDto.UserId, userDto.Password, userDto.UserRole, author).ConfigureAwait(false));
         }
 
         [HttpPost]

@@ -36,10 +36,10 @@ namespace Devon4Net.WebAPI.Implementation.Data.Repositories
             return await Create(new Users { UserId = userId, Password = password, UserRole = role, AuthorId = authorId }).ConfigureAwait(false);
         }
 
-        public async Task<Users> GetUserByCredentials(string userId, string password)
+        public Task<Users> GetUserByCredentials(string userId, string password)
         {
             Devon4NetLogger.Debug($"GetUserByCredentials method from repository UserRepository with values : UserId = {userId} and Password = {password}");
-            return await GetFirstOrDefault(x => x.UserId == userId && x.Password == password).ConfigureAwait(false);
+            return GetFirstOrDefault(x => x.UserId == userId && x.Password == password);
         }
     }
 }

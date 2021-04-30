@@ -28,7 +28,6 @@ namespace Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Dto
         /// <summary>
         /// the AuthorId
         /// </summary>
-        [Required]
         public string AuthorId { get; set; }
     }
 }

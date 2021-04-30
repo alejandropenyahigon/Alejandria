@@ -26,7 +26,7 @@ namespace Devon4Net.WebAPI.Implementation.Domain.RepositoryInterfaces
         /// GetAllAuthors
         /// </summary>
         /// <returns></returns>
-        Task<IList<Author>> GetAllAuthors();
+        Task<IEnumerable<Author>> GetAllAuthors();
 
         /// <summary>
         /// DeleteAuthorById

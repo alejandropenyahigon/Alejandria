@@ -48,5 +48,12 @@ namespace Devon4Net.WebAPI.Implementation.Domain.RepositoryInterfaces
         /// <param name="books"></param>
         /// <returns></returns>
         Task<bool> DeleteBooksFromList(IList<Book> books);
+
+        /// <summary>
+        /// Get Book by BookDto
+        /// </summary>
+        /// <param name="bookDto"></param>
+        /// <returns></returns>
+        Task<Book> GetBookByBookDto(BookDto bookDto);
     }
 }

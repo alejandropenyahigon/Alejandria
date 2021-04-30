@@ -67,7 +67,7 @@ namespace Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Service
         /// Lists all Authors
         /// </summary>
         /// <returns>AuthorListDto</returns>
-        public Task<IList<AuthorDto>> GetAllAuthors();
+        public Task<IEnumerable<AuthorDto>> GetAllAuthors();
 
         /// <summary>
         /// Creates a new User
