@@ -20,7 +20,7 @@ namespace Devon4Net.WebAPI.Implementation.Data.Repositories
         /// </summary>
         /// <param name="context"></param>
         public AuthorRepository(AlejandriaContext context) : base(context)
-        {
+        {           
         }
 
         /// <summary>
@@ -62,7 +62,11 @@ namespace Devon4Net.WebAPI.Implementation.Data.Repositories
         public async Task<IEnumerable<Author>> GetAllAuthors()
         {
             Devon4NetLogger.Debug("GetAllAuthors method from TodoRepository AuthorService");
-            return await Get().ConfigureAwait(false);
-        }        
+            var includeList = new List<string>();
+            includeList.Add("AuthorBook.Book");
+            includeList.Add("Users");
+            var result = await Get(includeList, x => x.Name.Equals("Miguel")).ConfigureAwait(false);
+            return result;
+        }
     }
 }

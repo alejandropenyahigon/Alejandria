@@ -333,35 +333,70 @@
             </summary>
             <param name="authorService"></param>
         </member>
+        <member name="M:Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Controllers.AuthorController.Login(System.String,System.String)">
+            <summary>
+            Returns the User credentials that matches the Credentials provided
+            </summary>
+            <param name="user"></param>
+            <param name="password"></param>
+            <returns></returns>
+        </member>
         <member name="M:Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Controllers.AuthorController.CreateAuthor(Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Dto.AuthorDto)">
             <summary>
-            Creates an author
+            Creates an Author
             </summary>
             <returns></returns>
         </member>
         <member name="M:Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Controllers.AuthorController.PublishBook(System.Guid,Devon4Net.WebAPI.Implementation.Business.BookManagement.Dto.BookDto)">
             <summary>
-            Publishes a book
+            Publishes a Book
              </summary>
         </member>
         <member name="M:Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Controllers.AuthorController.GetAllAuthors">
             <summary>
-            Lists all the authors
+            Lists all the Authors
             </summary>
         </member>
         <member name="M:Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Controllers.AuthorController.DeleteAuthor(System.Guid)">
             <summary>
-            Deletes an author
+            Deletes an Author
             </summary>
+        </member>
+        <member name="M:Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Controllers.AuthorController.CreateUser(System.String,System.String,System.String,Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Dto.AuthorDto)">
+            <summary>
+            Creates an User
+            </summary>
+            <param name="userDto"></param>
+            <param name="author"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Controllers.AuthorController.UserLogin(Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Dto.LoginDto)">
+            <summary>
+            Returns the JWT for the User that matches the Credentials provided
+            </summary>
+            <param name="loginDto"></param>
+            <returns></returns>
         </member>
         <member name="T:Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Converters.AuthorConverter">
             <summary>
-            TodoConverter
+            AuthorConverter
             </summary>
         </member>
         <member name="M:Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Converters.AuthorConverter.ModelToDto(Devon4Net.WebAPI.Implementation.Domain.Entities.Author)">
             <summary>
-            ModelToDto TODO transformation
+            ModelToDto Author transformation
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Converters.UserConverter">
+            <summary>
+            UserConverter
+            </summary>
+        </member>
+        <member name="M:Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Converters.UserConverter.ModelToDto(Devon4Net.WebAPI.Implementation.Domain.Entities.Users)">
+            <summary>
+            ModelToDto User transformation
             </summary>
             <param name="item"></param>
             <returns></returns>
@@ -497,6 +532,76 @@
             Constructor
             </summary>
         </member>
+        <member name="M:Devon4Net.WebAPI.Implementation.Business.BookManagement.Service.AuthorService.CreateAuthor(Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Dto.AuthorDto)">
+            <summary>
+            Creates an author
+            </summary>
+            <param name="authorDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Devon4Net.WebAPI.Implementation.Business.BookManagement.Service.AuthorService.DeleteAuthorById(System.Guid)">
+            <summary>
+            Deletes the author with the id provided
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Devon4Net.WebAPI.Implementation.Business.BookManagement.Service.AuthorService.GetBooksByAuthorBooks(System.Collections.Generic.IList{Devon4Net.WebAPI.Implementation.Domain.Entities.AuthorBook})">
+            <summary>
+            Returns the Books related with the AuthorBooks provided
+            </summary>
+            <param name="authorBooks"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Devon4Net.WebAPI.Implementation.Business.BookManagement.Service.AuthorService.GetAllAuthors">
+            <summary>
+            Returns all the authors
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Devon4Net.WebAPI.Implementation.Business.BookManagement.Service.AuthorService.GetAuthorByName(System.String)">
+            <summary>
+            Gets the author with the name provided
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Devon4Net.WebAPI.Implementation.Business.BookManagement.Service.AuthorService.ModifyAuthorById(System.Guid,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Modifies the author with the id provided
+            </summary>
+            <param name="id"></param>
+            <param name="name"></param>
+            <param name="surname"></param>
+            <param name="email"></param>
+            <param name="phone"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Devon4Net.WebAPI.Implementation.Business.BookManagement.Service.AuthorService.PublishBook(System.Guid,Devon4Net.WebAPI.Implementation.Business.BookManagement.Dto.BookDto)">
+            <summary>
+            Publishes a Book and AuthorBook with linked with the author provided
+            </summary>
+            <param name="authorId"></param>
+            <param name="bookDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Devon4Net.WebAPI.Implementation.Business.BookManagement.Service.AuthorService.CreateUser(System.String,System.String,System.String,Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Dto.AuthorDto)">
+            <summary>
+            Creates an User
+            </summary>
+            <param name="userId"></param>
+            <param name="password"></param>
+            <param name="role"></param>
+            <param name="authorDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Devon4Net.WebAPI.Implementation.Business.BookManagement.Service.AuthorService.UserLogin(Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Dto.LoginDto)">
+            <summary>
+            Returns the User information that matches with the Credentials provided
+            </summary>
+            <param name="loginDto"></param>
+            <returns></returns>
+        </member>
         <member name="T:Devon4Net.WebAPI.Implementation.Business.BookManagement.Service.BookService">
             <summary>
             Book service implementation
@@ -591,37 +696,37 @@
         </member>
         <member name="M:Devon4Net.WebAPI.Implementation.Business.BookManagement.Controllers.BookController.GetBook(System.String)">
             <summary>
-            Gets the book with the title specified if there is one
+            Gets the Book with the title provided if there is one
             </summary>
             <returns></returns>
         </member>
         <member name="M:Devon4Net.WebAPI.Implementation.Business.BookManagement.Controllers.BookController.CreateBook(Devon4Net.WebAPI.Implementation.Business.BookManagement.Dto.BookDto)">
             <summary>
-            Creates a book
+            Creates a Book
             </summary>
             <returns></returns>
         </member>
         <member name="M:Devon4Net.WebAPI.Implementation.Business.BookManagement.Controllers.BookController.DeleteBook(System.Guid)">
             <summary>
-            Deletes the book provided the id
+            Deletes the Book provided the id
             </summary>
             <returns></returns>
         </member>
         <member name="M:Devon4Net.WebAPI.Implementation.Business.BookManagement.Controllers.BookController.ModifyBookById(System.Guid,Devon4Net.WebAPI.Implementation.Business.BookManagement.Dto.BookDto)">
             <summary>
-            Modifies the done status of the book provided the data of the book
+            Modifies the book provided the data of the book
             In this sample, all the data fields are mandatory
             </summary>
             <returns></returns>
         </member>
         <member name="T:Devon4Net.WebAPI.Implementation.Business.BookManagement.Converters.BookConverter">
             <summary>
-            TodoConverter
+            BookConverter
             </summary>
         </member>
         <member name="M:Devon4Net.WebAPI.Implementation.Business.BookManagement.Converters.BookConverter.ModelToDto(Devon4Net.WebAPI.Implementation.Domain.Entities.Book)">
             <summary>
-            ModelToDto TODO transformation
+            ModelToDto Book transformation
             </summary>
             <param name="item"></param>
             <returns></returns>
@@ -1234,7 +1339,7 @@
         </member>
         <member name="M:Devon4Net.WebAPI.Implementation.Data.Repositories.AuthorRepository.Create(Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Dto.AuthorDto)">
             <summary>
-            Creates the TODO
+            Creates the Author
             </summary>
             <param name="name"></param>
             <param name="surname"></param>
@@ -1242,9 +1347,16 @@
             <param name="phone"></param>
             <returns></returns>
         </member>
+        <member name="M:Devon4Net.WebAPI.Implementation.Data.Repositories.AuthorRepository.DeleteAuthorById(System.Guid)">
+            <summary>
+            Deletes the author with the id provided
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
         <member name="M:Devon4Net.WebAPI.Implementation.Data.Repositories.AuthorRepository.GetAllAuthors">
             <summary>
-            Gets all the TODO
+            Gets all the Authors
             </summary>
             <returns></returns>
         </member>
@@ -1270,7 +1382,7 @@
         </member>
         <member name="M:Devon4Net.WebAPI.Implementation.Data.Repositories.BookRepository.DeleteBookById(System.Guid)">
             <summary>
-            Deletes the book by id
+            Deletes the Book by id
             </summary>
             <param name="id"></param>
             <returns></returns>
@@ -1288,6 +1400,13 @@
             Gets the Book by title
             </summary>
             <param name="title"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Devon4Net.WebAPI.Implementation.Data.Repositories.BookRepository.GetBookByBookDto(Devon4Net.WebAPI.Implementation.Business.BookManagement.Dto.BookDto)">
+            <summary>
+            Gets the Book that matches the BookDto provided
+            </summary>
+            <param name="bookDto"></param>
             <returns></returns>
         </member>
         <member name="T:Devon4Net.WebAPI.Implementation.Data.Repositories.EmployeeRepository">
@@ -1389,6 +1508,14 @@
             <param name="password"></param>
             <param name="role"></param>
             <param name="authorId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Devon4Net.WebAPI.Implementation.Data.Repositories.UserRepository.GetUserByCredentials(System.String,System.String)">
+            <summary>
+            Returns the User information matching the Credentials provided
+            </summary>
+            <param name="userId"></param>
+            <param name="password"></param>
             <returns></returns>
         </member>
         <member name="T:Devon4Net.WebAPI.Implementation.Domain.Database.EmployeeContext">
@@ -1548,7 +1675,7 @@
         </member>
         <member name="M:Devon4Net.WebAPI.Implementation.Domain.RepositoryInterfaces.IBookRepository.Create(Devon4Net.WebAPI.Implementation.Business.BookManagement.Dto.BookDto)">
             <summary>
-            Create
+            Creates a Book
             </summary>
             <param name="title"></param>
             <param name="summary"></param>
@@ -1577,6 +1704,13 @@
             <returns></returns>
         </member>
         <!-- Badly formed XML comment ignored for member "M:Devon4Net.WebAPI.Implementation.Domain.RepositoryInterfaces.IBookRepository.DeleteBooksFromList(System.Collections.Generic.IList{Devon4Net.WebAPI.Implementation.Domain.Entities.Book})" -->
+        <member name="M:Devon4Net.WebAPI.Implementation.Domain.RepositoryInterfaces.IBookRepository.GetBookByBookDto(Devon4Net.WebAPI.Implementation.Business.BookManagement.Dto.BookDto)">
+            <summary>
+            Get Book by BookDto
+            </summary>
+            <param name="bookDto"></param>
+            <returns></returns>
+        </member>
         <member name="T:Devon4Net.WebAPI.Implementation.Domain.RepositoryInterfaces.IEmployeeRepository">
             <summary>
             EmployeeRepository interface
@@ -1662,7 +1796,7 @@
         </member>
         <member name="M:Devon4Net.WebAPI.Implementation.Domain.RepositoryInterfaces.IUserRepository.GetUserByCredentials(System.String,System.String)">
             <summary>
-            Gets a user from de database with the credentials in the arguments
+            Gets a User from de database with the credentials in the arguments
             </summary>
             <param name="userId"></param>
             <param name="password"></param>
