@@ -1668,6 +1668,13 @@
             <param name="id"></param>
             <returns></returns>
         </member>
+        <member name="M:Devon4Net.WebAPI.Implementation.Domain.RepositoryInterfaces.IAuthorRepository.GetAuthorById(System.Guid)">
+            <summary>
+            GetAuthorById
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
         <member name="T:Devon4Net.WebAPI.Implementation.Domain.RepositoryInterfaces.IBookRepository">
             <summary>
             BookRepository interface

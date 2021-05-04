@@ -7,6 +7,7 @@ using Devon4Net.WebAPI.Implementation.Domain.RepositoryInterfaces;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using System.Linq;
 
 namespace Devon4Net.WebAPI.Implementation.Data.Repositories
 {
@@ -62,11 +63,31 @@ namespace Devon4Net.WebAPI.Implementation.Data.Repositories
         public async Task<IEnumerable<Author>> GetAllAuthors()
         {
             Devon4NetLogger.Debug("GetAllAuthors method from TodoRepository AuthorService");
-            var includeList = new List<string>();
-            includeList.Add("AuthorBook.Book");
-            includeList.Add("Users");
-            var result = await Get(includeList, x => x.Name.Equals("Miguel")).ConfigureAwait(false);
+            var includeList = new List<string>()
+            {
+                "AuthorBook.Book"
+            };
+
+            var result = await Get(includeList).ConfigureAwait(false);
+            if (result == null)
+            {
+                throw new Exception("The authors could not be found.");
+            }
+                       
             return result;
+        }
+
+        public async Task<Author> GetAuthorById(Guid id)
+        {
+            Devon4NetLogger.Debug("GetAuthorById method from TodoRepository AuthorService");
+            var includeList = new List<string>()
+            {
+                "AuthorBook.Book"
+            };
+
+            var authorList = await Get(includeList, x => x.Id == id).ConfigureAwait(false);          
+
+            return authorList.FirstOrDefault();
         }
     }
 }

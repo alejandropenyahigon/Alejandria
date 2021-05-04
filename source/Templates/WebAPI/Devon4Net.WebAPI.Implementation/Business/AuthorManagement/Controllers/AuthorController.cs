@@ -180,5 +180,17 @@ namespace Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Controllers
 
             return Ok(new LoginResponse { Token = token });
         }
+
+        [HttpGet]
+        [Route("authorbyid")]
+        [ProducesResponseType(typeof(LoginResponse), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<ActionResult> GetAuthorById(Guid id) 
+        {
+            Devon4NetLogger.Debug($"Executing method GetAuthorById from class AuthorController with value : {id}");
+            return Ok(await _authorService.GetAuthorById(id).ConfigureAwait(false));
+        }
     }
 }

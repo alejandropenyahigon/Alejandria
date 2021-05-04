@@ -36,7 +36,6 @@ namespace Devon4Net.WebAPI.Implementation.Business.BookManagement.Service
         /// <summary>
         /// Constructor
         /// </summary>
-        // Se Ejecuta cada vez que se accede a un endpoint.
         public AuthorService(IUnitOfWork<AlejandriaContext> uoW, IOptions<AlejandriaOptions> alejandriaOptions, IHttpClientHandler httpClientHandler) : base(uoW)
         {
             _authorRepository = uoW.Repository<IAuthorRepository>();
@@ -66,43 +65,34 @@ namespace Devon4Net.WebAPI.Implementation.Business.BookManagement.Service
         public async Task<Guid> DeleteAuthorById(Guid id)
         {
             Devon4NetLogger.Debug("DeleteAuthorById method from service AuthorService");
-            var author = await _authorRepository.GetFirstOrDefault(a => a.Id == id).ConfigureAwait(false);
+            var author = await _authorRepository.GetAuthorById(id).ConfigureAwait(false);
             if (author == null)
             {
-                throw new Exception($"The author with id : {id} has not been found in the DataBase");
+                throw new Exception("The authors could not be found.");
             }
 
-            var authorBooks = await _authorBookRepository.Get(x => x.AuthorId == id).ConfigureAwait(false);
-            var books = await GetBooksByAuthorBooks(authorBooks).ConfigureAwait(false);
+            var authorBooks = author.AuthorBook.ToList();
 
-            var authorBooksDeleted = await _authorBookRepository.DeleteAuthorBooksFromList(authorBooks).ConfigureAwait(false);
-            if (!authorBooksDeleted)
-            {
-                throw new Exception($"Author with id: {id} was found but authorbooks related with it could not be deleted");
-            }
-
-            var booksDeleted = await _bookRepository.DeleteBooksFromList(books).ConfigureAwait(false);
-            if (!booksDeleted)
-            {
-                throw new Exception($"Author with id: {id} was found but books published by it could not be deleted");
-            }
-
-            return await _authorRepository.DeleteAuthorById(id).ConfigureAwait(false);
-        }
-
-        /// <summary>
-        /// Returns the Books related with the AuthorBooks provided
-        /// </summary>
-        /// <param name="authorBooks"></param>
-        /// <returns></returns>
-        private async Task<IList<Book>> GetBooksByAuthorBooks(IList<AuthorBook> authorBooks)
-        {
             var books = new List<Book>();
-            foreach (AuthorBook a in authorBooks)
+            foreach (AuthorBook b in authorBooks)
             {
-                books.Add(await _bookRepository.GetBookById(a.BookId).ConfigureAwait(false));
+                books.Add(b.Book);
             }
-            return books;
+
+            var transaction = await UoW.BeginTransaction().ConfigureAwait(false);
+            try
+            {
+                await _authorBookRepository.DeleteAuthorBooksFromList(authorBooks).ConfigureAwait(false);
+                await _bookRepository.DeleteBooksFromList(books).ConfigureAwait(false);
+
+                await UoW.Commit(transaction).ConfigureAwait(false);
+                return await _authorRepository.DeleteAuthorById(id).ConfigureAwait(false);
+            }
+            catch
+            {
+                await UoW.Rollback(transaction).ConfigureAwait(false);
+                throw new Exception("The author could not be deleted");
+            }
         }
 
         /// <summary>
@@ -216,6 +206,13 @@ namespace Devon4Net.WebAPI.Implementation.Business.BookManagement.Service
                 return null;
             }
             return UserConverter.ModelToDto(userInDb);
+        }
+
+        public async Task<AuthorDto> GetAuthorById(Guid id)
+        {
+            Devon4NetLogger.Debug($"Executing method GetAuthorById from class AuthorService with value : AuthorId = {id}");
+            var author = await _authorRepository.GetAuthorById(id).ConfigureAwait(false);
+            return AuthorConverter.ModelToDto(author);
         }
     }
 }
