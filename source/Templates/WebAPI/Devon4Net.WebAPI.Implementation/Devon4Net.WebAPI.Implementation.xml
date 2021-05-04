@@ -546,13 +546,6 @@
             <param name="id"></param>
             <returns></returns>
         </member>
-        <member name="M:Devon4Net.WebAPI.Implementation.Business.BookManagement.Service.AuthorService.GetBooksByAuthorBooks(System.Collections.Generic.IList{Devon4Net.WebAPI.Implementation.Domain.Entities.AuthorBook})">
-            <summary>
-            Returns the Books related with the AuthorBooks provided
-            </summary>
-            <param name="authorBooks"></param>
-            <returns></returns>
-        </member>
         <member name="M:Devon4Net.WebAPI.Implementation.Business.BookManagement.Service.AuthorService.GetAllAuthors">
             <summary>
             Returns all the authors

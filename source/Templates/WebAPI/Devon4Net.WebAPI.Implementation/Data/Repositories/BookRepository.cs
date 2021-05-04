@@ -106,7 +106,7 @@ namespace Devon4Net.WebAPI.Implementation.Data.Repositories
         public Task<Book> GetBookByBookDto(BookDto bookDto)
         {
             Devon4NetLogger.Debug($"GetBookByBookDto method from repository BookRepository with value : {bookDto.Title}");
-            return GetFirstOrDefault(x => x.Title == bookDto.Title && x.Summary == bookDto.Summary && x.Genere == bookDto.Summary);
+            return GetFirstOrDefault(x => x.Title == bookDto.Title && x.Summary == bookDto.Summary && x.Genere == bookDto.Genere);
         }
     }
 }

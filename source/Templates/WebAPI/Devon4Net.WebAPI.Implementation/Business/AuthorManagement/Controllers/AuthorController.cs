@@ -88,7 +88,7 @@ namespace Devon4Net.WebAPI.Implementation.Business.AuthorManagement.Controllers
         /// </summary>
         [HttpPost]
         [HttpOptions]
-        //[Authorize(AuthenticationSchemes = AuthConst.AuthenticationScheme, Roles = AuthConst.AlejandriaAuthor)]
+        [Authorize(AuthenticationSchemes = AuthConst.AuthenticationScheme, Roles = "Author")]
         [Route("publish")]
         [ProducesResponseType(typeof(BookDto), StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
